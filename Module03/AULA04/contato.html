@@ -1,0 +1,64 @@
+<!--SERVE COMO FORMA DE CONTATO QUANDO SE ACESSA O CURRICULO DO INXEX SEMANTICO-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+
+    <form style="border: solid 1px black;width: 30%;padding: 20px;">
+        <!--FORMULÁRIO-->
+        <h2>Formulário</h2>
+
+        <div>
+            <label for="nome">Nome completo:<br></label>
+            <input type="text" id = "nome">
+        </div>
+        <div>
+            <label for="email">E-mail:<br></label>
+            <input type="email" id="email" placeholder="exemplo@gmail.com">
+        </div>
+        <div>
+            <label for="telefone">Telefone:<br></label>
+            <input type="number" id = "telefone" placeholder="99999999">
+        </div>
+        <label for="assunto">Escolha um assunto:<br></label>
+        <select name="assunto" id="assunto">
+            <option value="01">Informações complementares</option>
+            <option value="02">Indicação para uma vaga</option>
+            <option value="03">Entrevista de emprego</option>
+            <option value="04">Sugestões</option>     
+            <option value="04">Outro</option>     
+            
+        </select>
+        <label for="assunto"><br>Sexo:<br></label>
+        <select name="sexo" id="sexo">
+            <option value="male">Masculino</option>
+            <option value="famale">Feminino</option>  
+            <option value="nda">Prefiro não informar</option>
+        </select>
+        <div>
+            <label for= "termo"> Concorda com o termo de confidencialidade
+                das informações enviadas?</label>
+            <input type= "checkbox" id= "termo" name= "termo" value = "Concorda">
+        </div>
+
+        <div>
+            <label for="mensagem">Mensagem:<br></label>
+            <textarea id="mensagem" placeholder="Escreva aqui..." rows="10"cols="50"></textarea>
+        </div>
+        <div class="botao">
+            <button type="submit" style="padding:0px 15px;margin-right:20px;">Enviar!</button>
+            <button type="reset">Apagar tudo</button>
+            
+        </div>
+       
+        
+    </form>
+    
+</body>
+</html>
+
