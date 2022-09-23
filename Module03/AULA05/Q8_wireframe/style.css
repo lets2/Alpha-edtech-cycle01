@@ -1,0 +1,51 @@
+header{
+    background-color: aqua;
+    display: flex;
+}
+
+.cabecalho .logo{
+    width: 25%;
+}
+.cabecalho .menu-navegacao{
+    width: 75%;
+}
+
+.cabecalho .menu-navegacao .barra-horizontal{
+    background-color: green;
+}
+
+main{
+    background-color: red;
+}
+
+.primeira-secao{
+    display:flex;
+    background-color: blue;
+    justify-content: space-between;
+}
+.segunda-secao{
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+}
+.lista-produtos{
+    background-color: green;
+}
+.imagem7{
+    background-color: aqua;
+}
+
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+}
+.lista .produto{
+    display: flex;
+}
+h2{
+    background-color: blueviolet;
+}
+
+footer{
+    background-color: gray;
+}

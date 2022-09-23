@@ -1,0 +1,47 @@
+<!--O objetivo observar as mudanças no audio de acordo com o tipo de atributo-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+
+<body style="background-color:rgb(0, 0, 0);color: aliceblue;">
+    <header>
+        <h1>Aprendendo sobre Vídeos</h1>
+    </header>
+    <main>
+        <p><a href="./index.html">Clique aqui para Voltar</a></p>
+
+        <h2>Padrão</h2>
+        <p> Pressione o botão para que o vídeo comece</p>
+        <video controls>
+            <source src="./src/foca.mp4" type="video/mp4">
+            Seu navegador não possui suporte para esse vídeo.
+        </video>
+        <h2>Autoplay e muted</h2>
+        <p> O vídeo começa automaticamente e mutado</p>
+        <video controls autoplay muted>
+            <source src="./src/foca.mp4" type="video/mp4">
+            Seu navegador não possui suporte para esse vídeo.
+        </video>
+        <h2>Poster e loop</h2>
+        <p> Enquanto o vídeo não carrega deixa uma imagem ou até dar play.
+            Por conta do loop o vídeo continua indefinidamente depois que chega ao final recomeça</p>
+        <video controls loop poster="./src/zoologico.PNG">
+            <source src="./src/foca.mp4" type="video/mp4">
+            Seu navegador não possui suporte para esse vídeo.
+        </video>
+        
+
+        
+        <p>FIM DOS TESTES DE VÍDEOS!!!</p>
+        
+      
+        
+
+    </main>
+</body>
+</html>

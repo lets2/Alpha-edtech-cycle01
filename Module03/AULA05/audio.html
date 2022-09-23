@@ -1,0 +1,51 @@
+<!--O objetivo observar as mudanças no audio de acordo com o tipo de atributo-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <header>
+        <h1>Aprendendo sobre Áudios</h1>
+    </header>
+    <main>
+        <p><a href="./index.html">Clique aqui para Voltar</a></p>
+
+        <h2>Padrão</h2>
+        <p> Pressione o botão para que a música comece a tocar</p>
+        <audio controls>
+            <source src="./src/TheFinalCountdown.mp3" type="audio/mp3">
+            Seu navegador não possui suporte para esse áudio.
+        </audio>
+
+        <h2>Autoplay</h2>
+        <p> Não é necessário pressionar o áudio começa automaticamente</p>
+        <audio controls autoplay>
+            <source src="./src/TheFinalCountdown.mp3" type="audio/mp3">
+            Seu navegador não possui suporte para esse áudio.
+        </audio>
+
+        <h2>Loop e muted</h2>
+        <p> O áudio começa automaticamente, mas mutado e se repete asim que chega no final.</p>
+        <audio controls autoplay loop muted>
+            <source src="./src/brasil.mp3" type="audio/mp3">
+            Seu navegador não possui suporte para esse áudio.
+        </audio>
+
+        <h2>Preload - pode receber auto, metadata ou none</h2>
+        <p> Pode receber auto, metadata ou none.</p>
+        <audio controls preload="none">
+            <source src="./src/brasil.mp3" type="audio/mp3">
+            Seu navegador não possui suporte para esse áudio.
+        </audio>
+        <p>FIM DOS TESTES DE ÁUDIO!!!</p>
+        
+      
+        
+
+    </main>
+</body>
+</html>
