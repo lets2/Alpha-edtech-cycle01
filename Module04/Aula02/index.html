@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+            <nav id="painel">
+                <ul id="painel-menu">
+                    <li class="opc"><a href="https://www.tudogostoso.com.br/" target="_blank">HOME</a></li>
+                    <li class="opc"><a href="https://www.tudogostoso.com.br/" target="_blank">BLOG</a></li>              
+                    <li class="opc"><a href="https://www.tudogostoso.com.br/" target="_blank">SOBRE NÓS</a></li>
+                    <li class="opc"><a href="https://www.tudogostoso.com.br/" target="_blank">CONTATO</a></li>
+                    <li class="opc"><a href="https://www.tudogostoso.com.br/" target="_blank">ENVIE SUA RECEITA</a></li>
+                    <li class="opc"><a href="https://www.tudogostoso.com.br/" target="_blank">CADASTRA-SE</a></li>
+                </ul>
+                <div id="painel-barra">                 
+                    <label for="pesquisa" class="label">
+                        <input type="text" id="pesquisa" name="pesquisa" placeholder="Encontre uma receita">
+                        <img src="./assets/images/search.svg" alt="Lupa de pesquisa" id="lupa">
+                    </label>
+                </div>
+            </nav>
+    </header>
+    <main>
+        <section class="capitulo">
+            <p><a id = "link" href="https://www.tudogostoso.com.br/" target="_blank" rel="noopener noreferrer">Clique aqui para imprimir!</a></p>
+            <h1>BOLO DE MARACUJÁ FOFINHO</h1>
+        </section>
+        <section class="capitulo">
+            <h2>INGREDIENTES</h2>   
+            <p>BOLO:</p>
+            <ul>
+                <li>3 ovos</li>
+                <li>3/4 de xícara de óleo</li>
+                <li class="item-azul">2 xícaras de <span>açúcar</span></li>
+                <li>3 xícaras de farinha de trigo</li>
+                <li>1 xícara de <span>suco de maracujá</span> (bem forte)</li>
+                <li>1 colher de sopa de fermento em pó</li>
+            </ul>
+            <p>CALDA:</p>
+            <ul>
+                <li class="item-azul">1 xícara de <span>açúcar</span></li>
+                <li>1/2 xícara de água</li>
+                <li><span>Polpa</span> de 1 maracujá</li>
+            </ul>
+        </section>
+        <section class="capitulo">
+            <h2>MODO DE PREPARO</h2>   
+            <p>BOLO:</p>
+            <ol>
+                <li>Bata bastante na batedeira os ovos, açúcar e o óleo.</li>
+                <li>Acrescente a farinha e o suco do <span>maracujá</span>.</li>
+                <li>Bata novamente até misturar bem.</li>
+                <li>Depois acrescente o fermento em pó e bata só para misturar.</li>
+                <li>Coloque em forma untada com margarina e farinha.</li>
+                <li>Leve ao forno médio, pré-aquecido, por cerca de 40 minutos, ou até dourar.</li>
+            </ol>
+            <p>CALDA:</p>
+            <ol>
+                <li class="item-azul">Leve ao fogo mexendo sempre a água e o <span>açúcar</span>, até dar quase um ponto de fio, não chega a ficar grossa.</li>
+                <li>Depois apague o fogo e acrescente a polpa do <span>maracujá</span> e misture.</li>
+                <li>Sirva sobre os pedaços do bolo.</li>
+            </ol>
+            <figure class="bolo">
+                <img src="./assets/images/bolo-maracuja.jpg" alt="Imagem de um bolo de maracujá">
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <div id = "inscrito">
+            <h2>Inscreva-se para receber mais receitas:</h2>
+            <form id = "formulario">
+                <div class="entrada">
+                    <label for="nome"></label>
+                    <input type="text" id="nome" name="nome" placeholder="Escreva seu nome" required>
+                </div>
+                <div class="entrada">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Escreva seu e-mail" required>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="termo">
+                    <label for="termo">Desejo receber receitas diariamente</label>
+                </div>
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </div>
+        <div id="direitos">
+            <p>TODOS OS DIREITOS RESERVADOS.</p>
+        </div>
+    </footer>
+</body>
+</html>

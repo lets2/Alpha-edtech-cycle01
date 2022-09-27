@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kung Fu Panda</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <!--Estabelece um vínculo para aplicar CSS da forma "external"-->
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+</head>
+
+<!--Recomenda-se adicionar tag estyle entre o head e o body ao tentar fazer css "internal"-->
+<style>
+    span{
+        background-color: rgb(0, 255, 0);
+        color:rgb(0, 255, 34);
+    }
+</style>
+
+
+<body>
+    <!--Top of page-->
+    <header style="background-color:blueviolet;color:white;">
+        <figure id="container-banner">
+            <img id="banner" src="./assets/images/banner.PNG" alt="banner with popcorn and movie camera">
+        </figure>
+        <!--navigation panel-->
+        <nav id=container-panel>
+            <a class="panel" href="">NOTÍCIAS</a>
+            <a class="panel" href="">VÍDEOS</a>
+            <a class="panel" href="">FILMES</a>
+            <a class="panel" href="">SÉRIES</a>
+            <a class="panel" href="">ARTISTAS</a>
+            <a class="panel" href="">CONTATO</a>
+        </nav>
+    </header>
+    <!--Content main-->
+    <main>
+        <div style="margin-top:30px" id="block">
+            <div>
+                <h1>Kung Fu Panda</h1>
+                <h2 class="subtitle">Sinopse:</h2>
+                <p>Po é um panda que trabalha na loja de macarrão da sua família e sonha em transformar-se em um mestre
+                    de kung fu. <span id = "teste" style="color:red;">Seu sonho se torna realidade quando</span>, inesperadamente, ele deve cumprir uma profecia antiga e estudar a arte marcial com seus ídolos, os Cinco Furiosos. Po precisa de toda a sabedoria, força e habilidade que conseguir reunir para proteger seu povo de um leopardo da neve malvado.
+                </p>
+                <h2>Observações finais:</h2>
+                <p> Foi adicionado três tipos de estilização na tag span() que está destacada de vermelho no parágrafo anterior:</p>
+                <ul style="padding-left:30px">
+                    <li><strong>Inline-></strong> a cor da fonte para vermelho;</li>
+                    <li><strong>Interno-></strong> Mudar a cor da fonte e o background para verde;</li>
+                    <li><strong>Externo-></strong> Cor da fonte e o background para azul e sublinhar;</li>
+                </ul>
+                <p>Conforme a ordem de prioridade, percebe-se que, o resultado é: Estiliza o "span"
+                    com a cor de fonte vermelho (pois o inline define isso e tem prioridade), fica
+                    como background verde (pois o inline não definiu background e o próximo com prioridade
+                    é o "interno" que definiu como verde).  De forma análoga, o externo não tem prioridade,
+                    portanto ele só ajuda a definir que o texto seja sublinhado.
+                </p>
+                <p> Em outro teste percebeu-se que usar um seletor de ID em um arquivo externo
+                    tem mais prioridade do que um estilo interno tentando mudar a tag que possue aquele ID
+                </p>
+
+            </div>
+            <figure>
+                <img class="poster" src="./assets/images/poster.jpg" alt="Poster do filme Kung Fu Panda">
+            </figure>
+        </div>
+      
+
+    </main>
+    <footer>
+        <p class="rights">Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

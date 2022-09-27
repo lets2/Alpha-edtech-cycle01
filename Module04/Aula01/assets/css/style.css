@@ -1,0 +1,93 @@
+/*universal selector*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+}
+/*selector by ID*/
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#container-banner{
+    width: 100%;
+}
+#banner{
+    width: 100%;
+}
+/*selector by tagName*/
+a{
+    text-decoration: none;
+    font-size: 30px;
+    color:white;
+}
+
+#container-panel{
+    width: 100%;
+    max-width: 980px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 10px 0px;
+}
+
+
+/*selector by class*/
+/*there are 6 tag "a" that have the class="panel"*/
+.panel{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.subtitle{
+    text-decoration: underline;
+    margin: 10px;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#block{
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#block p{
+    max-width:500px ;
+    text-align: justify;
+}
+.poster{
+    height: 500px;
+}
+
+span{
+    color:blue;
+    background-color: blue;
+    text-decoration:underline;
+    font-weight: 700;
+}
+/*
+#teste{
+    background-color: blueviolet;
+}
+*/
+.rights{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    color: white;
+    background-color: blueviolet;
+}

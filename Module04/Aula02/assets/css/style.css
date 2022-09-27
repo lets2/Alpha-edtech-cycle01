@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:rgb(255, 0, 200);
+}
+
+
+#link:visited{
+    color:red
+}
+
+#link:hover{
+    color: yellow;
+}
+
+
+
+h1{
+    font-size: 32px;
+}
+body{
+    width: 100%;
+}
+header{
+    width:100%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+#painel{
+    max-width:90%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+#painel-menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items:center;
+    margin: 15px 30px;
+    color: white;
+    font-size: 14px;
+}
+#painel-menu .opc{
+    margin:0px 10px;
+}
+#painel-barra{
+    background-color: white;
+    border-radius: 18px;
+}
+.label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pesquisa{
+    margin: 0px 10px;
+    border: none;
+}
+#lupa{
+    height: 35px;
+    background-color: blue;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 2px;
+    
+}
+/*RECEITA PÁGINA PRINCIPAL*/
+main{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.capitulo{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px 10px;
+}
+.capitulo p{
+    margin: 5px 0px;
+    padding-left: 10px;
+}
+
+.capitulo ul, .capitulo ol{
+    margin-left: 30px;
+}
+
+.bolo img{
+    width: 500px;
+    margin: 20px 0px 0px 30px;
+}
+
+#formulario{
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(137, 137, 243);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#formulario .entrada input{
+    width: 230px;
+    margin: 5px 0px;
+}
+
+#formulario .entrada input[type="checkbox"]{
+    width: 230px;
+    padding: 30px;
+}
+#formulario .check{
+    margin: 0px 20px;
+}
+#formulario button{
+    padding: 5px 30px;
+    margin:5px 20px;
+    color:white;
+    background-color: blue;
+    border:1px  solid blue;
+}
+
+#formulario button:hover{
+    color:blue;
+    background-color: white;
+    border: 1px solid blue;
+    transition-delay: 0.1s;
+
+}
+
+
+#inscrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#direitos{
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    padding: 20px 0px;
+    color:white;
+}
+
+/*destacando ingredientes importantes*/
+
+span{
+    font-weight: 600;
+    color: red;
+}
+
+.item-azul span{
+    color: blue;
+}
+
+#pesquisa:focus{
+    outline:none;
+}
