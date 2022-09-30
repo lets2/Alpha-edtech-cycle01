@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    /*box-sizing: border-box;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+h1{
+    margin: 20px 10px;
+}
+
+.caixa-principal{
+    height: 100vh;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.caixa1{
+    height: 300px;
+    width: 300px;
+    border: 2px solid blue;
+    padding: 20px;
+}
+
+.caixa2{
+    height: 100%;
+    width: 500px;
+    border: 2px solid green;
+    margin-top: 50px;
+}
+

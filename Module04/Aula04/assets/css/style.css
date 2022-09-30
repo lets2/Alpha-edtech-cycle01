@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#big-box{
+    margin: 20px;
+    border:2px solid blue;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+/*quando se usa wrap é bom usar esse para alinhar 
+        já que existirão muitas linhas*/
+
+/*seletor de filho direto*/
+
+#sub-box1,#sub-box2,#sub-box3,#sub-box4,#sub-box5,#sub-box6,#sub-box7{
+    height: 60px;
+    width: 60px;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+    
+}
+#big-box > .box{
+    border:2px solid blue;
+    width: 260px;
+    height: 180px;
+}
+#sub-box1{
+    position: static;
+    background-color: blue;
+}
+#sub-box2{
+    position: static;
+    background-color: orange;
+}
+
+
+#sub-box3{
+    background-color: orange;
+    position: static;
+}
+
+#sub-box4{
+    background-color: green;
+    position: relative;
+    left: 90px;
+    top: 40px;
+}
+
+#sub-box5{
+    background-color: orange;
+    position:absolute;
+    top: 380px;
+}
+
+#sub-box6{
+    background-color: green;
+    position: absolute;
+    left: 90px;
+    top: 420px;
+}
+
+#sub-box7{
+    background-color: green;
+    position: fixed;
+    left: 400px;
+    top: 370px;
+}
+
+.impar{
+    color: blue;
+    font-weight: bold;
+}
