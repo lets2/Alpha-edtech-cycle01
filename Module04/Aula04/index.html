@@ -33,11 +33,11 @@
             </div>
         </div>
         <div class="legend">
-            <p class = "impar">No primeiro retângulo empregou-se static, que é o padrão de position</p>
-            <p>No segundo retângulo empregou-se position relative no quadrado verde.  </p>
+            <p class = "impar">No primeiro retângulo empregou-se static, que é o padrão de position, não precisávamos declarar,pois todo elemento padrão começa como static, ou seja,  elemento é posicionado seguiindo o fluxo do documento</p>
+            <p>No segundo retângulo empregou-se position relative no quadrado verde. Usando left,top,bottom, right podemos modificar a posição do elemento com relação a ele mesmo.  </p>
             <p class = "impar">No terceiro retângulo, Optou-se por utilizar position absolute para os dois
-                isso fez com que a aplicação de left e top fosse em relação a borda esquerda
-                da página e com relação ao topo da página.
+                isso fez com que a aplicação de left e top fosse em relação ao seu elemento pai que foi definido como "relative". Caso não existissse um elemento na hierarquia definido como relativo, o position absolute
+                seria em relação aos limites da página.
             </p>
             <p>Por fim, no último retângulo, utilizou-se o atributo fixed
                 consequentemente, os atributos left e top foram medidos em relação ao extremo

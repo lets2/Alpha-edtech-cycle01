@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05 | Color and background</title>
+</head>
+<style>
+    body {
+        color: black;
+    }
+
+    p {
+        margin: 10px;
+    }
+
+    /*Put here the style tag because i'm Lazy*/
+    #p01 {
+        color: rebeccapurple;
+    }
+
+    #p02 {
+        color: #0099bcaa;
+    }
+
+    #p03 {
+        color: rgba(12, 12, 12, 0.5);
+    }
+
+    #p04 {
+        color: hsl(30, 100%, 50%);
+    }
+
+    #p05 {
+        color: hsla(323, 73%, 55%, 0.6);
+    }
+
+    #p06 {
+        color: inherit;
+    }
+
+    section {
+        display: flex;
+    }
+
+    div {
+        height: 120px;
+        width: 200px;
+        border: 15px dotted rgb(162, 0, 255);
+        margin: 5px 10px;
+    }
+
+    #d01 {
+        background-color: rgb(105, 224, 105);
+        background-clip: border-box;
+    }
+
+    #d02 {
+        background-color: rgb(105, 224, 105);
+        background-clip: padding-box;
+    }
+
+    #d03 {
+        background-color: rgb(105, 224, 105);
+        background-clip: content-box;
+    }
+
+    #d04 {
+        border: none;
+        background-image: url("./assets/background-image01.jpg");
+        background-repeat: no-repeat;
+        background-size: 400px 300px;
+    }
+
+    #d05 {
+        border: none;
+        background-image: linear-gradient(to bottom, rgba(192, 223, 220, 0.7), rgba(206, 216, 73, 0.7)),
+            url("./assets/logo.png");
+        background-repeat: repeat-x;
+    }
+
+    #d06 {
+        border: none;
+        background-image: linear-gradient(to bottom, rgba(192, 223, 220, 0.7), rgba(206, 216, 73, 0.7)),
+            url("./assets/logo.png");
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        background-position: right center;
+    }
+    #d07 {
+        border: none;
+        background-image: linear-gradient(to bottom, rgba(192, 223, 220, 0.7), rgba(206, 216, 73, 0.7)),
+            url("./assets/logo.png");
+        background-repeat: space;
+        background-origin: border-box;
+        background-position: right center;
+    }
+    #d08 {
+        border: none;
+        background-image: linear-gradient(to bottom, rgba(192, 223, 220, 0.7), rgba(206, 216, 73, 0.7)),
+            url("./assets/logo.png");
+        background-repeat: space;
+        background-size: 100px auto;
+    }
+    #d09 {
+        width: 450px;
+        height: 300px;
+        border: none;
+        background-image: linear-gradient(to bottom, rgba(192, 223, 220, 0.7), rgba(206, 216, 73, 0.7)),
+            url("./assets/logo.png");
+        background-repeat: space;
+        background-size: 100px auto;
+        background-attachment: fixed;
+    }
+</style>
+
+<body>
+    <h2>Praticando propriedade color</h2>
+    <p id="p01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus?</p>
+    <p id="p02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus?</p>
+    <p id="p03">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus?</p>
+    <p id="p04">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus?</p>
+    <p id="p05">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus?</p>
+    <p id="p06">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus?</p>
+
+    <h2>Praticando propriedade color</h2>
+
+    <section>
+        <div id="d01">
+            <p> background-clip: BORDER-box; </p>
+        </div>
+        <div id="d02">
+            <p> background-clip: PADDING-box;</p>
+        </div>
+        <div id="d03">
+            <p> background-clip: CONTENT-box;</p>
+        </div>
+    </section>
+    <section>
+        <div id="d04">
+            <p> background-image</p>
+            <p> background-repeat:no-repeat </p>
+            <p> background-size </p>
+        </div>
+        <div id="d05">
+            <p> linear-gradient</p>
+            <p> background-repeat:repeat-x </p>
+        </div>
+
+        <div id="d06">
+            <p> no-repeat</p>
+            <p> origin:border-box</p>
+            <p> position: right center</p>
+        </div>
+    </section>
+    <section>
+        <div id="d07">
+            <p>repeat:space</p>
+            <p> origin:border-box</p>
+        </div>
+        <div id="d08">
+            <p>size: (largura altura)</p>
+            <p> size: 100px auto</p>
+        </div>      
+    </section>
+    <div id="d09">
+        <p>background-attachment:fixed </p>
+        <p> Image ficará grudada mesmo usando scroll</p>
+    </div>
+
+
+    <footer>
+        <p>TODOS OS DIREITOS RESERVADOS</p>
+        <p>TODOS OS DIREITOS RESERVADOS</p>
+        <p>TODOS OS DIREITOS RESERVADOS</p>
+        
+    </footer>
+</body>
+
+</html>
