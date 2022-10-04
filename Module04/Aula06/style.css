@@ -1,0 +1,126 @@
+/*Dentro do comentário abaixo encontra-se a forma de importar a fotne pelo css*/
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');*/
+
+/*font-family: 'Roboto', sans-serif;*/
+/*normal uso essa*/
+@font-face {
+    font-family: 'Play';
+    src: url("./assets/fonts/Play-Regular.ttf");
+}
+/*Para aplicar negrito uso essa*/
+@font-face {
+    font-family: 'Play bold';
+    src: url("./assets/fonts/Play-Bold.ttf");
+    font-weight: bold;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 800px;
+    margin: 0 auto;
+}
+h1,h2{
+    margin: 20px 0px;
+    color: black;
+    font-size: 16px;
+    font-family: 'Play',sans-serif;
+    font-weight: 400;
+}
+h1{
+    text-align: center;
+    margin-top: 120px;
+    font-family: 'Play bold';
+}
+
+p{
+    color: rgb(70, 65, 65);
+    text-align: justify;
+    text-justify: inter-character;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.lista{
+    display: flex;
+    margin-left:40px;
+    list-style-type:decimal;
+}
+.lista > li{
+    margin: 0px 20px;
+}
+/*font-family: 'Play', sans-serif;*/
+/*about tables - zebra style, use parametro (even) or (odd)*/
+table{
+    border: 1px solid black;
+}
+
+th,td{
+    padding: 10px;
+}
+.table-element{
+    font-weight: bold;
+}
+
+
+tr:nth-child(even) {
+     background-color: #74cddf;
+  }
+
+
+header{
+    margin-bottom: 20px;
+    padding: 20px 0px;
+    width: 100%;
+    background-color: #74cddf;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    color: yellow;
+}
+header{
+    position: fixed;
+    top: 0px;
+}
+header ul{
+    list-style-type: none;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin: 0px 20px;
+}
+img{
+    height: 30px;
+    margin: 0px 20px;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user p{
+    font-size: 16px;
+}
+footer{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0px;
+    width: 100%;
+    background-color: #74cddf;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
