@@ -1,0 +1,771 @@
+/*Font imports*/
+@font-face {
+    font-family: "Pacifico";
+    src: url("../assets/fonts/Pacifico-Regular.ttf");
+}
+/* 
+@font-face {
+    font-family: "Pacifico";
+    src: url("../assets/fonts/Pacifico-Regular.ttf");
+    font-weight:600 ;
+}
+*/
+/*
+How call the import fonts
+font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Lato', sans-serif;
+*/
+/*RESET OF MARGIN, PADDING AND CHANGING BOX-SIZING TO BORDER-BOX*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+STILIZING ELEMENTS OF HEADER
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+*/
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+.container-top{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.container-top > h3, .footer-contact > h3{
+    font-family: 'Pacifico', cursive;
+    font-size: 34px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.menu .menu-list{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#6C6C6C;
+    padding: 21px 20px;
+}
+a:hover{
+    color: #000;
+}
+.menu #home{
+    color:#AC1313;
+}
+.menu .buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 15px;
+    border-left: 1px solid #ebebeb;
+}
+.menu .buy img{
+    margin: 0 5px 0 0;
+}
+.menu .buy a{
+    padding: 0px;
+    letter-spacing: normal;
+    font-size: 14px;
+    font-family: 'Libre Franklin', sans-serif;
+    color:#6C6C6C;
+}
+
+.menu .buy a:hover{
+    color: #000;
+}
+#cart{
+    width: 20px;
+    height: 20px;
+}
+
+/*
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+STILIZING ELEMENTS OF MAIN
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+*/
+
+/*CSS of Main*/
+main{
+    margin-top: 90px;
+    width: 100%;
+}
+
+/*
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+STILIZING ELEMENTS OF SECTION 1
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+*/
+.section-first{
+    display: flex;
+    padding: 0 24px;
+    height: 500px;
+    position: relative;
+    background-color: #f6f6f6;
+}
+.section-first .text{
+    width: 520px;
+    position: absolute;
+    left: 100px;
+    top: 120px;
+}
+
+.section-first .text p{
+    font-size: 16px;
+    font-family: 'Libre Franklin', sans-serif;
+    color:#6C6C6C;
+    margin: 0 0 10px;
+
+}
+.section-first .text button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color:#FFFFFF;
+    margin-top: 40px;
+    padding: 20px 40px;
+    background-color: #AC1313;
+    border: none;
+    transition: all 0.4s;
+    transition-timing-function: linear;
+}
+
+.section-first .text button:hover{
+    background-color: rgb(0, 0, 0);
+    transform: translate(0px,-15px);
+    /*position: relative;
+    bottom: 4px;*/
+}
+
+
+.section-first .text button a{ 
+    padding: 0;
+    color:#FFFFFF;
+}
+
+.section-first figure{
+    height:500px;
+    position: absolute;
+    right: 0px;
+}
+
+.section-first figure img{
+    height: 100%;
+    right: 50px;
+}
+
+.subtitle-begin{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #d77474;
+    font-weight: 400;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 500;
+    padding: 10px 0 10px;
+}
+
+.and{
+    font-family: 'Playfair Display', serif;
+    color:#AC1313;
+    font-size: 68px;
+}
+
+/*
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+STILIZING ELEMENTS OF SECTION 2
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+*/
+.section-second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 120px 100px;
+}
+
+.section-second h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    color: #000;
+    margin: 20px 0 40px;
+}
+/*mudei a margin acima de 10px para 40 para afastar o título*/
+
+
+.section-second-figure{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.section-second-figure .circle{
+    width: 240px;
+    height: 240px;
+    background-color:red;
+    border: 30px solid green;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 40px;
+    cursor: pointer;
+}
+
+.section-second-figure h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color:#FFFFFF;
+    font-weight: 400;
+    margin: 10px 0 30px;
+    letter-spacing: 2px;
+}
+.section-second-figure .plate1{
+    background-color:#e4b465;
+    border: 30px solid #D8AA61;
+}
+.section-second-figure .plate2{
+    background-color:#f05b10;
+    border: 30px solid #e4560f;
+}
+.section-second-figure .plate3{
+    background-color:#a21010;
+    border: 30px solid #9a0f0f;
+}
+
+
+.circle img{
+    width: 70px;
+}
+
+.section-second-text{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.section-second-text div{
+    width: 500px;
+}
+.section-second-text div h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    width: 445px;
+    margin: 0 0 10px;
+}
+.section-second-text div p{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    margin: 20px 0 10px;
+    line-height: 24px;
+    color:#6C6C6C;
+}
+/*
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+STILIZING ELEMENTS OF SECTION 3
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+*/
+
+.section-third{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 900px;
+    padding: 80px 100px;
+    border-top:1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    flex-wrap: wrap;
+}
+
+.section-third-figure{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+.section-third-figure img{
+    width:250px;
+    height: 500px;
+}
+.section-third-text{
+    width: 420px;
+}
+.section-third-text h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.section-third-text p{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    margin: 0 0 10px;
+    line-height: 24px;
+    color: #6C6C6C;
+}
+.section-third-text button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #000000;
+    margin: 20px 0 0;
+    border:none;
+    background: none;
+    cursor: pointer;
+}
+.section-third-text button:hover{
+    text-decoration: underline;
+}
+
+
+#ceramic{
+    width: 350px;
+    height: 416px;
+}
+/*
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+STILIZING ELEMENTS OF SECTION 4
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+*/
+
+.section-fourth{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 100px;
+}
+
+.section-fourth h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    color: #000000;
+    margin: 20px 0 50px;
+}
+.section-fourth-images{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.section-fourth-images .element{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+    margin-bottom: 15px;
+    width:360px;
+}
+.section-fourth-images .element:hover{
+    border-bottom: 1px solid #AC1313;
+}
+
+
+.section-fourth-images .container-image{
+    width: 360px;
+    height: 480px;
+    overflow: hidden; 
+}
+
+.section-fourth-images .container-image .product{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease-out;
+}
+.product1{
+    background-image: url("../assets/images/imagem4.png");
+}
+ .product2{
+    background-image: url("../assets/images/imagem5.png");
+}
+.product3{
+    background-image: url("../assets/images/imagem6.png");
+}
+ .product4{
+    background-image: url("../assets/images/imagem7.png");
+}
+.product5{
+    background-image: url("../assets/images/imagem8.png");
+}
+ .product6{
+    background-image: url("../assets/images/imagem9.png");
+}
+
+.product1:hover,.product2:hover,.product3:hover,.product4:hover,.product5:hover,.product6:hover{
+    transform: scale(1.1);
+    filter: brightness(90%);
+}
+
+
+
+.section-fourth-images img{
+    width:360px;
+}
+.section-fourth-images h4{
+    font-size: 16px;
+    font-family: 'Libre Franklin', sans-serif;
+    color:#6C6C6C;
+    margin: 0 0 10px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.section-fourth-images p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.section-fourth button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color:#FFFFFF;
+    font-weight: 300;
+    margin-top: 30px;
+    padding: 20px 40px;
+    background-color: #AC1313;
+    border: none;
+    transition: all 0.4s linear;
+}
+.section-fourth button:hover{
+    background-color: rgb(0, 0, 0);
+    transform: translate(0px,-15px);
+    /*position: relative;
+    bottom: 4px;*/
+}
+
+
+
+/*
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+STILIZING ELEMENTS OF SECTION 5
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+*/
+
+.section-fifth{
+    background-image: url("../assets/images/imagem10.PNG");
+    background-size: cover;
+    padding: 120px 0;
+}
+.section-fifth-text{
+    width: 614px;
+    padding-left: 100px;
+}
+.section-fifth-text h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 50px;
+    color: #000000;
+    margin: 10px 0 0px;
+}
+
+.section-fifth-text p{
+    width: 80%;
+    font-size: 16px;
+    font-family: 'Libre Franklin', sans-serif;
+    color:#6C6C6C;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+
+}
+.section-fifth-text p span{
+    text-decoration: underline;
+    color: #AC1313;
+    font-weight: 600;
+}
+
+.section-fifth-text button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color:#FFFFFF;
+    font-weight: 300;
+    padding: 20px 40px;
+    background-color: #AC1313;
+    border: none;
+    margin-top: 10px;
+    transition: all 0.4s linear;
+}
+.section-fifth-text button:hover{
+    background-color: rgb(0, 0, 0);
+    transform: translate(0px,-15px);
+    /*position: relative;
+    bottom: 4px;*/
+}
+
+
+
+/*
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+STILIZING ELEMENTS OF SECTION 6
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+*/
+
+.section-sixth{
+    padding: 120px 0;
+}
+.section-sixth figure{
+    margin: 0 auto 40px;
+    width: 80px;
+    height:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:#e4b465;
+
+}
+.section-sixth figure img{
+    width: 55px;
+}
+
+.section-sixth .text{
+    text-align: center;
+}
+.section-sixth .text p{
+    text-align: center;
+}
+.section-sixth .text h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    color: #000000;
+    margin: 20px 0 10px;
+}
+.section-sixth form{
+    margin: 0 auto;
+    width: 500px;
+}
+.section-sixth form img{
+    width: 20px;
+}
+.section-sixth .form-field{
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+.section-sixth .form-field div{
+    background-color: #ffffff;
+    border: 1px solid gray;
+    display: flex;
+    width: 320px;
+    height: 100%;
+    align-items: center;
+    padding: 8px 12px 8px 12px;
+}
+.section-sixth .form-field div input{
+    width: 90%;
+    padding-left: 5px;
+    border: none;
+}
+.section-sixth .form-field button{
+    width:175px;
+    height:45px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 12px;
+    transition: all 0.3s linear;
+}
+.section-sixth .form-field button:hover{
+    background-color: #AC1313;
+    border: solid #AC1313;
+}
+
+
+
+.section-sixth .form .check{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    width: 500px;
+    font-size: 14px;
+    margin: 40px 0 28px;
+    color: #A1A1A1;
+    padding: 0 0 0 20px;
+}
+.section-sixth .form #box{
+    margin: 0 10px;
+}
+/*
+font-family: 'Lato', sans-serif;*/
+
+
+/*
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+STILIZING ELEMENTS OF FOOTER
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+*/
+
+.footer-contact{
+    padding: 120px 100px 0;
+    text-align: center;
+    border-top: 1px solid #ebebeb;
+}
+
+.footer-contact > p{
+    width: 75%;
+    font-size: 14px;
+    font-family: 'Libre Franklin', sans-serif;
+    color:#6C6C6C;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0 auto 60px;
+
+}
+.footer-contact-list{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-contact-list img{
+    width: 40px;
+    height: 40px;
+}
+.footer-contact-list li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-contact-list h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 1px;
+    color: #000000;
+    margin: 10px 0 20px;
+}
+
+.footer-contact-list p{
+    font-size: 14px;
+    font-family: 'Libre Franklin', sans-serif;
+    color:#6C6C6C;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0 auto 60px;
+}
+.rights{
+    font-family: 'Libre Franklin', sans-serif;
+    color:#6C6C6C;
+    font-size: 12px;
+    text-align: center;
+    margin: 80px 0 0;
+    padding: 30px 0 20px;
+    font-weight: 500;
+}
+.rights a{
+    color: #000;
+    padding: 0px;
+}
+
+/*
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+TO READY THE ANIMATIONS
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+*/
+#title{
+    opacity: 0;
+    transform: translate3d(0,50px,0);
+    transition: 0.3s;
+}
+#title.animate{
+    opacity: 1;
+    transform: translate3d(0px,0px,0px);
+}
+
+
+[data-animation]{
+    opacity: 0;
+    transition: 0.3s ease;
+}
+[data-animation="left"]{
+    transform: translate3d(-100px,0,0);
+}
+[data-animation="right"]{
+    transform: translate3d(100px,0,0);
+}
+[data-animation="right2"]{
+    transform: translate3d(100px,0,0);
+}
+[data-animation="right3"]{
+    transform: translate3d(100px,0,0);
+}
+
+
+[data-animation="bottom"]{
+    transform: translate3d(0,150px,0);
+}
+
+
+[data-animation].animate{
+    opacity: 1;
+    transform: translate3d(0px,0px,0px);
+}
+
+/*
+APPYING PARALLAX EFFECT ON SECTION 2
+*/
+/*.section-second{
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: magenta;
+}
+.parallax{
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    height: 100vh;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+}
+.Content {
+    display: block;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+  }
+
+  */

@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*FONTS THAT I HAVE IMPORTED FROM GOOGLE FONTS
+font-family: 'VT323', monospace;
+FOR ARCADE GAME SERIES:
+font-family: 'Press Start 2P', cursive;
+FOR NAME: PAC MAN
+
+*/
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(13, 13, 68);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+/*STILIZING TO CREATE A RED GHOST*/
+
+/*making ghosts*/
+.ghost {
+    height: 200px;
+    position: relative;
+    width: 152px;
+    transform: scale(0.5);
+    animation: ghost_appears 5.0s infinite;
+}
+
+.head {
+    height: 100px;
+    position: relative;
+    width: 152px;
+    border-radius: 70px 70px 0 0;
+}
+
+.eye,.eyeball {
+position: relative;
+border-radius: 100%;
+}
+.eyeball {
+background: #FFF;
+height: 50px;
+width: 50px;
+}
+.eyeball:first-child {
+    float: left;
+    margin: 50px 0 0 25px;
+}
+.eyeball:last-child {
+    float: right;
+    margin: 50px 25px 0 0;
+}
+
+.eye {
+background: #0d2bd7;
+height: 25px;
+margin:10%;
+width: 25px;
+}
+.legs {
+    border-bottom: 40px solid transparent;
+    display: block;
+    float: left;
+    height: 80px;
+    width: 0;
+}
+/*painting ghost*/
+.head{
+    background: red;
+}
+.legs{
+    border-right: 38px solid red;
+    border-left: 38px solid red;
+}
+
+/*CREATING ARCADE LOGO*/
+
+.container-arcade{
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    color: white;
+    padding: 3px 20px;
+    background-color: red;
+    border:3px solid white;
+    outline: 3px solid red;
+    border-radius: 30px;
+    margin-bottom: 40px;
+}
+
+/*CREATING TITLE PAC-MAN*/
+.container-title{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid black;
+    outline: 8px solid red;
+}
+.container-title p{
+    text-shadow: 5px 5px 0px blue;
+}
+img{
+    height: 80px;
+    filter: drop-shadow(5px 5px 0px blue);
+}
+.container-title span{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: yellow;
+    box-shadow: 5px 5px 0px blue;
+}
+/*CREATING LOADING BAR*/
+.container-bar{
+    width: 500px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: magenta;
+    display: flex;
+    align-items: center;
+}
+.bar-left{
+    width: 15%;
+    height: 100%;
+    padding-left: 3px;
+    background-color: yellow;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    text-shadow: 2px 2px 0px white;
+    animation: reverse bar_left 10s infinite;
+}
+.bar-right{
+    width: 85%;
+    height: 100%;
+    background-color: white;
+    border: 2px solid black;
+    animation: reverse bar_right 10s infinite;
+}
+
+
+/*CREATING TEXT ABOUT LOADING*/
+.container-text{
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+    color:white;
+    text-shadow: 2px 2px 0px black;
+    animation: loading_text 3.0s infinite;
+}
+
+/*STILIZING PANEL SONG*/
+.panel-audio{
+    background-color: yellow;
+    border: 6px solid black;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left:10px;
+    top:10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+.panel-audio img{
+    width: 30px;
+    filter: none;
+}
+
+.panel-audio .off{
+    position: relative;
+}
+.panel-audio .on{
+    position: relative;
+    left: 5.5px;
+    width: 34px;
+    transform: scaleY(0.85);
+}
+
+
+
+
+@keyframes loading_text{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+@keyframes bar_left{
+    0%{
+        width: 15%;
+    }
+    0%{
+        width: 15%;
+    }
+    
+    50%{
+        width: 53%;
+    }
+    0%{
+        width: 100%;
+    }   
+}
+@keyframes bar_right{
+    0%{
+        width: 85%;
+    }
+    50%{
+        width: 47%;
+    }
+    0%{
+        width: 0%;
+    }   
+}
+
+@keyframes ghost_appears{
+    0%{
+        opacity: 0;
+        transform: scale(0.4);
+        transform: translate(-300px,0);
+        transform: rotate(40deg);
+    }
+    49%{
+        opacity: 1;
+        transform: scale(1.0);
+        transform: translate(300px,50px) rotate(0deg);
+    }
+    50%{
+        opacity: 0;
+        transform: scale(0.4);
+        transform: translate(300px,0) rotate(-50deg);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: scale(1.0);
+        transform: translate(-300px,50px) rotate(0deg);
+    }
+}

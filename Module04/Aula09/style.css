@@ -1,0 +1,213 @@
+:root{
+  --ghost-red:red;
+  --ghost-orange:orange;
+  --ghost-cyan:cyan;
+  --ghost-pink:pink;
+  --color-green:green;
+  --color-orange:orange;
+  --color-yellow:yellow;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding: 20px 50px 20px 50px;
+    background-color: #333;
+    color: white;
+}
+ul{
+    list-style: none;
+    
+    display: flex;
+}
+ul > li{
+    margin: 5% 0;
+    width: calc(100% / 5);
+}
+
+ul >  div {
+    display: table;
+    margin: 0 auto;
+}
+ul >p {
+    color: #FFF;
+    text-align: center;
+}
+
+.square { 
+    width: 50px; 
+    height: 50px; 
+    background: var(--color-green); 
+}
+.rectangle { 
+    width: 100px; 
+    height: 50px; 
+    background: var(--color-green); 
+}
+
+.parallelogram { 
+    width: 100px; 
+    height: 50px; 
+    transform: skew(30deg,0deg);/*equivalente a skewx(30deg)*/ 
+    background: var(--color-green); 
+}
+  
+.trapezoid { 
+   
+    border-bottom: 50px solid var(--color-green);  
+    border-left: 25px solid transparent; 
+    border-right: 25px solid transparent;    
+    /*se eu coloco apenas border-bottom, ficaria so uma linha horizontal
+    porém, como colocamos esquerda e direita, gera uma divisória entre as bordas
+    por fim colocar essas duas faz elas sumirem e restar apenas a borda do bottom*/
+    height: 0; 
+    width: 50px; 
+}
+ 
+.rhombus { 
+    width: 50px; 
+    height: 50px; 
+    background: var(--color-green); 
+    transform: rotate(45deg);
+} 
+/*MODIFY TRIANGLES*/
+.triangle{
+    height: 0px;
+    width:0px;
+}
+
+#up { 
+    border-left: 50px solid transparent; 
+    border-right: 50px solid transparent; 
+    border-bottom: 100px solid var(--color-orange); 
+}
+#right { 
+    border-top: 50px solid transparent; 
+    border-bottom: 50px solid transparent; 
+    border-left: 100px solid var(--color-orange); 
+}
+#down { 
+    border-left: 50px solid transparent; 
+    border-right: 50px solid transparent; 
+    border-top: 100px solid var(--color-orange); 
+}
+#left{ 
+    border-top: 50px solid transparent; 
+    border-bottom: 50px solid transparent; 
+    border-right: 100px solid var(--color-orange); 
+}
+
+#circle { 
+    width: 100px; 
+    height: 100px; 
+    background: var(--color-yellow); 
+    border-radius: 50%;
+  }
+  
+  #ellipse { 
+    width: 200px; 
+    height: 100px; 
+    background: var(--color-yellow); 
+    border-radius: 50%; 
+  }
+  
+  #moon { 
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    background-color: blue;/*erase this line to transforme moon only*/
+    box-shadow: 15px 15px 0 0 var(--color-yellow); 
+  } 
+  
+  #pacman { 
+    width: 0px; 
+    height: 0px; 
+    border-right: 50px solid blue; /*change this to transparent to form a packman*/
+    border-top: 50px solid var(--color-yellow); 
+    border-left: 50px solid var(--color-yellow);
+    border-bottom: 50px solid var(--color-yellow);
+    border-top-left-radius: 50px; 
+    border-top-right-radius: 50px; 
+    border-bottom-left-radius: 50px; 
+    border-bottom-right-radius: 50px; 
+  }
+.ghost-list{
+  display: flex;
+}
+  /*making ghosts*/
+  .ghost {
+    height: 200px;
+    margin: 25px;
+    position: relative;
+    width: 200px;
+  }
+
+  .head {
+    height: 100px;
+    position: relative;
+    width: 152px;
+    border-radius: 70px 70px 0 0;
+  }
+
+  .eye,.eyeball {
+  position: relative;
+  border-radius: 100%;
+}
+.eyeball {
+  background: #FFF;
+  height: 50px;
+  width: 50px;
+}
+ .eyeball:first-child {
+    float: left;
+    margin: 50px 0 0 25px;
+  }
+ .eyeball:last-child {
+    float: right;
+    margin: 50px 25px 0 0;
+  }
+
+.eye {
+  background: #0d2bd7;
+  height: 25px;
+  margin:10%;
+  width: 25px;
+}
+.legs {
+    border-bottom: 40px solid transparent;
+    display: block;
+    float: left;
+    height: 40px;
+    width: 0;
+  }
+/*painting the ghosts*/
+  #red .head{
+    background: var(--ghost-red);
+  }
+  #red .legs{
+    border-right: 38px solid var(--ghost-red);
+    border-left: 38px solid var(--ghost-red);
+  }
+  #orange .head{
+    background: var(--color-orange);
+  }
+  #orange .legs{
+    border-right: 38px solid var(--ghost-orange);
+    border-left: 38px solid var(--ghost-orange);
+  }
+  #cyan .head{
+    background: var(--ghost-cyan);
+  }
+  #cyan .legs{
+    border-right: 38px solid var(--ghost-cyan);
+    border-left: 38px solid var(--ghost-cyan);
+  }
+  #pink .head{
+    background: var(--ghost-pink);
+  }
+  #pink .legs{
+    border-right: 38px solid var(--ghost-pink);
+    border-left: 38px solid var(--ghost-pink);
+  }
