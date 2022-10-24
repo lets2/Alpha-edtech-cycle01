@@ -1,0 +1,44 @@
+/*Import Roboto font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,p{
+    margin: 0.5rem 1rem;
+}
+form{
+    border: 0.1rem solid aqua;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 22rem;
+}
+input{
+    margin: 0.2rem 0.2rem;
+}
+
+button{
+    margin: 0rem  1rem;
+    padding: 0.4rem 1rem;
+    background-color: aqua;
+    border: 0.1rem solid aqua;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+

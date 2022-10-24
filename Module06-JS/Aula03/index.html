@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./logo-white.png" type="image/x-icon">
+        <link rel="stylesheet" href="./index.css">
+        <title>Mod06 - Aula 03</title>
+    </head>
+
+    <body>
+
+        <header>
+
+        </header>
+        <main>
+            <form class="form flex-column">
+                <h1>Calculator</h1>
+                <div>
+                    <label for="element1">Operand 1</label>
+                    <input type="number" id="element1" placeholder="number 1"> 
+                </div>
+                <div>
+                    <label for="element2">Operand 2</label>
+                    <input type="number" id="element2" placeholder="number 2">      
+                </div>
+                <select name="operator" id="operator">
+                    <option disabled selected>SELECT OPERATOR</option>
+                    <option value="add">ADDICTION</option>
+                    <option value="sub">SUBTRACTION</option>
+                    <option value="mult">MULTIPLICATION</option>
+                    <option value="divi">DIVISION</option>
+                </select>
+                <div class="flex-row">
+                    <button type="submit"id="button-calculate">CALCULATE</button>
+                    <button type="submit"id="button-reset">CLEAR</button>
+                </div>
+                <p class="result hide-result"></p>
+            </form>
+
+        </main>
+        <footer>
+
+        </footer>
+
+        <script src="./index.js"></script>
+    </body>
+
+</html>

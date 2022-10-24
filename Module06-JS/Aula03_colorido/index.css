@@ -1,0 +1,81 @@
+/*Import Roboto font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background:linear-gradient(75deg, #bb92fc,#8a54e2)
+}
+
+.flex-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.form{
+    margin: 120px auto;
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: #36F27D;
+    border: 3px solid #7D36F2;
+}
+input,label{
+    margin: 5px 5px;
+}
+label{
+    font-weight: 500;
+}
+input{
+    width: 100px;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+input::placeholder{
+    color: #7D36F2;
+}
+select{
+    margin: 10px 10px;
+    padding: 5px 5px;
+    text-align: center;
+    border-radius: 10px;
+    color: #7D36F2;
+    font-weight: 700;
+}
+
+h1{
+    margin: 30px 0px;
+}
+.hide-result{
+    display: none;
+}
+.result{
+    margin: 14px 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #7D36F2;
+}
+button{
+    padding: 10px 13px;
+    margin: 5px 5px;
+    background-color: #7D36F2;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+button:active{
+    background-color: #b28dee;
+}

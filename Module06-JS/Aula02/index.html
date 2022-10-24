@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="./logo-white.png" type="image/x-icon">
+    <title>Mod06 | Aula 02</title>
+</head>
+<body>
+    <header>
+        <h2>--------------------</h2>
+    </header>
+    <main>
+        <h1>Módulo 06 - Aula 02 - JAVASCRIPT</h1>
+        <p>The main objective of this page is to create two forms. The first compare two number
+            and inform what is big than another one, or if they are equals. The second compare two strings and presents whats of them it has than bigger length.
+        </p>
+       
+       <section class="flex-column">
+        <h2>Form - Compare numbers</h2>
+        <form class="flex-column">
+            <div class="flex-column">
+                <div class="flex-row">
+                    <label for="number1">Insert number 1</label>
+                    <input type="number" id="number1">
+                </div>
+                <div class="flex-row">
+                    <label for="">Insert number 2</label>
+                    <input type="number" id="number2">
+                </div>
+                <div class="compare-result class="flex-row">
+                    <p id="result-number">--</p>
+                </div>
+                
+            </div>
+            <div class="flex-row">
+                <button type="submit" id="compare-numbers">Compare numbers</button>
+                <button type="submit" id="clear-input-number">Clear inputs</button>
+            </div>
+            
+       </form>
+       </section>
+       <section class="flex-column">
+           <h2>Form - Compare strings</h2>
+            <form class="flex-column">
+                <div class="flex-column">
+                    <div class="flex-row">
+                        <label for="string1">Insert string 1</label>
+                        <input type="text" id="string1">
+                    </div>
+                    <div class="flex-row">
+                        <label for="string2">Insert string 2</label>
+                        <input type="text" id="string2">
+                    </div>
+                    <div class="compare-result flex-row">
+                        <p id="result-string">--</p>
+                    </div>
+                    
+                </div>
+                <div class="flex-row">
+                    <button type="submit" id="compare-strings">Compare strings</button>
+                <button type="submit" id="clear-input-string">Clear inputs</button>
+                </div>
+        </form>
+       </section> 
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
