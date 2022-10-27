@@ -1,52 +1,28 @@
-const cep = document.querySelector("#cep");
-
+const inputCep = document.querySelector("#cep");
 
 /*FUNCAO QUE DEU CERTO*/
-cep.addEventListener("input",(event) => {
+inputCep.addEventListener("input",(event) => {
  
-    const str = event.target.value;
-    let position = event.target.selectionStart;//get selection pointer
-    if(cep.value.length <= 9) {
-        cep.value = str.replace(/[^0-9\-]/g,"");
-        deixaCepNoPadrao(cep.value);
-    }
+    let position = event.target.selectionStart;
+    const newValueCep = inputCep.value.replace(/[^0-9]/g,"")
+   
+    if (newValueCep.length <= 5) inputCep.value = newValueCep;
+
     else {
-        cep.value = str.replace(/[^0-9\-]/g,"");
-        deixaCepNoPadrao(cep.value.replace("-",""))
-    }
-
-    if(cep.value.length===6){
-        cep.value = str.replace("-","");
-    }
-
-    if(cep.value.length>=6 && position===6){
-        position++;
+        inputCep.value = newValueCep.slice(0,5) + "-" + newValueCep.slice(5,8);
+        if (newValueCep.length >= 6 && position == 6) position++;
     }
 
     event.target.selectionEnd = position;
-    //preenche endereço
-    if(cep.value.length===9){
-        procuraLocal(cep.value);
+
+    //Fill field with API datas about Address
+    if (inputCep.value.length === 9){
+        procuraLocal(inputCep.value);
     }
    
-
 })
 
-function deixaCepNoPadrao(stringCep){
-
-    const last = stringCep.charAt(stringCep.length-1);
-    if(stringCep.indexOf("-") == -1 && stringCep.length > 5) {
-        cep.value = stringCep.slice(0,5) + "-" + stringCep.slice(5,8);
-    }
-    else {
-        if(stringCep.length > 5) {
-            const stringSemHifen = stringCep.replace("-","");
-            cep.value = stringSemHifen.slice(0,5) + "-" + stringSemHifen.slice(5);
-        }
-    }
-}
-
-/*FUNCAO QUE DEU CERTTO*/
+/*FETCH API TO GET DATAS*/
 
 function procuraLocal(cep){
 
@@ -58,15 +34,15 @@ function procuraLocal(cep){
         cache: "default"
     }
     fetch(`https://viacep.com.br/ws/${search}/json/`,options)
-    .then((response)=>{ response.json()
-        .then((data)=>showData(data))
+    .then((response) => { response.json()
+        .then((data) => showData(data))
     })
-    .catch(error=>console.log("Deu erro: "+error,message))
+    .catch(error => console.log("Deu erro: "+error,message))
 }
 
-const showData = (result)=>{
-    for(const campo in result){
-        if(document.querySelector("#"+campo)){
+const showData = (result) => {
+    for (const campo in result) {
+        if (document.querySelector("#"+campo)) {
             console.log(campo)
             document.querySelector("#"+campo).value = result[campo]
         }    

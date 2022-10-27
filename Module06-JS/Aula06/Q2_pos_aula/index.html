@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="shortcut icon" href="./src/assets/logo.png" type="image/x-icon">
+    <title>Consulta CEP</title>
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="./src/assets/logo-white.png" alt="Logo da empresa">
+            <span>LetsForm</span>
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">SUBSCRIBE</a></li>
+            </ul>
+        </nav>
+        
+        <div class="menu-search">
+            <div>
+                <img src="./src/assets/search.svg" alt="search icon">
+                <input type="search" placeholder="Typing here">
+            </div>
+            <img src="src/assets/menu.svg" alt="menu icon">
+        </div>
+
+    </header>
+    <main>
+        <div class="ball"></div>
+
+        <section class="container-form">
+            <form>
+                <fieldset class="fieldset-login">
+                    <legend>Dados de login</legend>
+                    <div class="form-group">
+                        <label for="name">Nome completo</label>
+                        <input type="text" id="name">
+                        <small></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email">
+                        <small></small>
+                    </div>
+                    
+                </fieldset>
+
+                <fieldset class="fieldset-adress">
+                    <legend>Endereço</legend>
+                    <section class="section">
+                        <div class="form-group left">
+                            <label for="cep">CEP</label>
+                            <input type="text" id="cep">
+                            <small>00000-000</small>
+                        </div>
+                        <div class="form-group right">
+                            <label for="logradouro">Logradouro</label>
+                            <input type="text" id="logradouro">
+                            <small>Rua.,Av.</small>
+                        </div>
+                    </section>
+                    <section class="section">
+                        <div class="form-group initial">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" id="bairro">
+                        </div>
+                        <div class="form-group center">
+                            <label for="localidade">Localidade</label>
+                            <input type="text" id="localidade">
+                            <small>Cidade</small>
+                        </div>
+                        <div class="form-group final">
+                            <label for="uf">UF</label>
+                            <input type="text" id="uf">
+                            <small>Estado</small>
+                        </div>
+                    </section>
+                </fieldset>
+                <button type="submit">Enviar</button>
+
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>Copyright © 2022 | Lets.</p>
+    </footer>
+    <script src="src/js/main.js"></script>
+
+</body>
+
+</html>
