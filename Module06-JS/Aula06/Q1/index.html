@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./src/assets/brand.png" type="image/x-icon">
+        <link rel="stylesheet" href="./src/css/index.css">
+        <script src="./src/js/index.js" defer></script>
+        <title> Alpha | Sports Cars</title>
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="./src/assets/brand.png" alt="Logo lets corporation">
+            <nav class="container flex-row-center">
+                <ul class="flex-row-center">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">CUSTOM SOLUTIONS</a></li>
+                    <li><a href="#">SPORT</a></li>
+                    <li><a href="#">DEALERSHIPS</a></li>
+                    <li><a href="#">STORE</a></li>
+                    
+                </ul>
+            </nav>
+            <img id="menu" src="./src/assets/menu.svg" alt="Menu">
+
+        </header>
+        <main>
+            <div id = "main"class="container flex-column-start">
+                <h1>Shop - Sports car</h1>
+                <section>
+                    <form class="flex-column-center">
+                        <h2>Choose a car to view technical information about it:</h2>
+                        <select name="product" id="product">
+                            <option disabled selected>choose one</option>
+                            <option value="car01">SF 90</option>
+                            <option value="car02">S8 Spider</option>
+                            <option value="car03">718 BOXSTER</option>
+                            <option value="car04">LP 780-4</option>
+                        </select>
+                    </form>
+                    <div class="information flex-column-center">
+                        <h2 id="name">Name:</h2>
+                        <h2 id="maker">Maker:</h2>
+                        <h2 id="maxSpeed">Max. Speed:</h2>
+                        <h2 id="acceleration">0-100km/h:</h2>
+                        <h2 id="power">Power:</h2>
+                    </div>
+                    <figure>
+                        <img class="img-car">
+                        <img id ="brand" src = "./src/assets/brand.PNG"alt="car" class="initial">
+                    </figure>
+                </section>
+            </div>
+
+        </main>
+        <footer>
+            <div class=".container flex-row-center">
+                <p text>Copyright © 2022 | Lets</p>
+           </div>
+
+        </footer>
+
+    </body>
+
+</html>

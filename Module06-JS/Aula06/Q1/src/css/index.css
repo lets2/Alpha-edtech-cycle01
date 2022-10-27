@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
+:root{
+    --background-main:white;
+    --background-primary:black;
+    --background-secundary:#FFD700;
+    --background-terciary:magenta;
+
+    --font-main:black;
+    --font-primary:white;
+    --font-secundary:#FFD700;
+    --font-terciary:pink;
+}
+/*
+.darkmode:root{
+    //choose colors to dark mode
+}
+*/
+/*-+-+-+-+-+-+-+-+-+
+GENERAL SETTINGS
+-+-+-+-+-+-+-+-+-+-+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+.container{
+    width:90%;
+    margin:0 auto;
+}
+.flex-row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flex-row-start{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.flex-col-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-col-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+body{
+    height: 100vh;
+}
+header{
+    height: 6rem;
+    width: 100%;
+    background-color: var(--background-primary);
+}
+footer{
+    height: 6rem;
+    width: 100%;
+    background-color: var(--background-primary);
+}
+main{
+    height: calc(100vh - 12rem);
+    width: 100%;
+    background-color: var(--background-main);
+}
+main > div{
+    height: 100%;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0rem 2rem;
+}
+a:hover{
+    color:var(--font-secundary);
+}
+h1,h2,h3,h4{
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+p,a,button,small{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color:var(--font-primary);
+}
+select,option{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color:var(--font-main);
+}
+span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color:var(--font-primary);
+}
+/*-+-+-+-+-+-+-+-+-+
+SPECIFIC ITEMS
+-+-+-+-+-+-+-+-+-+-+*/
+nav{
+    height: 100%;
+}
+#logo{
+    height: 4rem;
+    margin-left: 2rem;
+}
+#menu{
+    height: 3rem;
+    margin-right: 2rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem 0rem;
+    text-transform: uppercase;
+    
+}
+.main{
+    height: 100%;
+}
+section{
+    display: flex;
+    align-items: flex-start;
+    
+}
+h2{
+    font-size: 1.8rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+
+form{
+    background-color: var(--background-primary);
+    margin: 3rem 0rem 0rem 0rem;
+    border-radius: 2rem;
+    border: 0.2rem solid var(--background-secundary);
+    padding: 1rem;
+    width: 20%;
+    color: var(--font-secundary);
+}
+select{
+    margin: 1rem 0rem 1rem 5rem;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    color: var(--font-secundary);
+    border: 0.1rem solid  var(--font-secundary);
+    background-color: var(--background-primary);
+}
+option{
+    color: var(--font-secundary);
+    border: 0.1rem solid  var(--font-secundary);
+    text-align: center;
+}
+
+.information{
+    background-color: var(--background-primary);
+    margin: 3rem 0rem 0rem 2rem;
+    border: 0.2rem solid var(--background-secundary);
+    color: var(--font-secundary);
+    width: 20%;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+figure{
+    width: 60rem;
+    padding-left: 4rem;
+}
+.img-car{
+    width: 100%;
+}
+
+
+footer div{
+    height: 100%;
+}
+
+.initial{
+    width:20rem;
+    position: relative;
+    left: 26rem;
+    top:3rem;
+}
+.hide{
+    display: none;
+}
