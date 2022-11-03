@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="shortcut icon" href="./logo-white.png" type="image/x-icon" />
+		<title>Aula 08 | Q1</title>
+	</head>
+
+	<body>
+		<header></header>
+		<main>
+			<div class="container flex-col-start">
+				<h1>Form - Personal Information</h1>
+				<form class="flex-col-center">
+					<div class="field">
+						<label for="firstName">Name</label>
+						<input type="text" id="firstName" />
+					</div>
+					<div class="field">
+						<label for="birthDay">Day</label>
+						<input type="text" id="birthDay" />
+						<label for="birthMonth">Month</label>
+						<input type="text" id="birthMonth" />
+						<label for="birthYear">Year</label>
+						<input type="text" id="birthYear" />
+					</div>
+					<div class="field">
+						<label for="weight">Weight (kg)</label>
+						<input type="text" id="weight" />
+						<label for="height" class="label-height">Height (cm)</label>
+						<input type="text" id="height" />
+					</div>
+					<select name="gender" id="gender">
+						<option disabled selected>Select gender</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+						<option value="DidnotInform">I'd rather not inform</option>
+					</select>
+					<input type="button" id="send" value="Send" />
+				</form>
+				<p id="message"></p>
+				<div id="data-colected">
+
+				</div>
+			</div>
+		</main>
+		<footer></footer>
+
+		<script src="./index.js"></script>
+	</body>
+</html>
+
