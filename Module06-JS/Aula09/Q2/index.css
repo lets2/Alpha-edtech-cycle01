@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
+:root{
+    --background-main:black;
+    --background-primary:rgb(108, 252, 79);
+    --background-secundary:red;
+
+    --font-main:blue;
+    --font-primary:pink;
+    --font-secundary:red;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;   
+}
+
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+h2{
+    font-size: 1.6rem;
+}
+label,select,option,input{
+    font-size: 1.6rem;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.container{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 10rem 0rem 0rem;
+}
+
+.flex-col-start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.flex-col-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: 0.2rem solid var(--background-main);
+}
+.field{
+    margin:0.5rem 0rem;
+}
+input{
+    width: 7rem;
+}
+
+input[type="button"]{
+    min-width: 10rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0rem;
+    cursor: pointer;
+    box-shadow: 0.3rem 0.3rem 0rem var(--background-main);
+}
+input[type="button"]:hover{
+    padding: 0.5rem 1rem;
+    margin: 1rem 0rem;
+    background-color: var(--background-primary);
+    color:white;
+    box-shadow: 0.3rem 0.3rem 0rem var(--background-main);
+    cursor: pointer;
+}
+input[type="button"]:active{
+    padding: 0.5rem 1rem;
+    margin: 1rem 0rem;
+    cursor: pointer;
+    color:white;
+    background-color: var(--background-primary);
+    transform: translate(0.2rem,0.2rem);
+    box-shadow: 0.1rem 0.1rem 0rem var(--background-main);
+}
+
+label{
+    font-weight: bold;
+}
+select{
+    margin: 1rem 0rem;
+}
+#firstName{
+    width: 29rem;
+    padding-left:2rem;
+    text-align: start;
+}
+
+
+#message{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.correct{
+    color: green;
+}
+.incorrect{
+    color: red;
+}
+
+.label-height{
+    padding-left: 2rem;
+}
+
+
+#data-colected p{
+    font-size: 1.6rem;
+}
+
+#data-colected span{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+#daysLeft{
+    width: 20rem;
+}

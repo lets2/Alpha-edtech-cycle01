@@ -1,0 +1,102 @@
+
+main, form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    flex-wrap: wrap; 
+    align-content: center;
+    justify-content: center;
+}
+form{
+    border: 0.2rem solid #f353f3;
+    width: 40rem;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+}
+.field{
+    margin: 0.5rem 0rem;
+    border: 0.2rem solid #f353f3;
+    border-radius: 2rem;
+}
+
+.grid-field{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "oper1 oper1 oper2 oper2 oper3 oper3"
+                        "oper4 oper4 oper4 oper5 oper5 oper5";
+
+}
+#button-addition{
+    grid-area: oper1;
+}
+#button-subtraction{
+    grid-area: oper2;
+}
+#button-multiplication{
+    grid-area: oper3;
+}
+#button-division{
+    grid-area: oper4;
+}
+#button-potentiation{
+    grid-area: oper5;
+}
+
+
+h1{
+    margin: 1rem;
+}
+label{
+    margin: 1rem;
+}
+label{
+    font-size: 1.5rem;
+}
+input[type="text"]{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    padding: 0.2rem 1rem;
+    width: 10.5rem;
+
+    border: .2rem solid #f353f3;
+}
+
+
+input[type="button"]{
+    background-color: #f353f3;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    margin: 0.5rem 1rem 1rem;
+    cursor: pointer;
+    box-shadow: 0.3rem 0.3rem 0rem gray;
+}
+input[type="button"]:active{
+    transform: translate(0.3rem,0.3rem);
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0rem gray;
+}
+input[type="button"]:hover{
+    background-color: #b80cb8;
+    color: white;
+}
+
+.okay{
+    color: green;
+}
+
+.have-error{
+    color: red;
+}
+
+#message{
+    color: red;
+}

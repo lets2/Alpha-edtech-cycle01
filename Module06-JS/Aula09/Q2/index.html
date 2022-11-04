@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="shortcut icon" href="./logo-white.png" type="image/x-icon" />
+		<title>Aula 09 | Q2</title>
+	</head>
+
+	<body>
+		<header></header>
+		<main>
+			<div class="container flex-col-start">
+				<h1>Form - Death Time Calculator</h1>
+				<form class="flex-col-center">
+					<div class="field">
+						<h2>Birthdate</h2>
+						<label for="birthDay">Day</label>
+						<input type="text" id="birthDay" />
+						<label for="birthMonth">Month</label>
+						<input type="text" id="birthMonth" />
+						<label for="birthYear">Year</label>
+						<input type="text" id="birthYear" />
+					</div>
+					<select name="gender" id="gender">
+						<option disabled selected>Select gender</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+					</select>
+					<div class="field">
+						<label for="daysLeft">Time to death:</label>
+						<input type="text" id="daysLeft" />
+					</div>
+					
+					<input type="button" id="calculate" value="Calculate" />
+				</form>
+				<p id="message"></p>
+				<div id="data-colected">
+
+				</div>
+			</div>
+		</main>
+		<footer></footer>
+
+		<script src="./index.js"></script>
+	</body>
+</html>
+
