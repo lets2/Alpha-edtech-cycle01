@@ -1,0 +1,31 @@
+Q1)
+a)products;
+Array responsável por armazenar todos os
+produtos que são adicionados pelo usuario
+b)errors;
+Objeto contendo métodos que retornam um
+mensagem de erro específica de acordo com
+o tipo de erro que aconteceu
+c)messages;
+Objeto que contém métodos que ao serem chamados
+exibem uma mensagem específica de sucesso
+de acordo com o tipo de situação, se foi
+atualização ou inclusão.
+d)labels;
+Objeto contendo as etiquetas(labels)
+de dois botões/inputs
+e)elements;
+Objeto contendo todos os elementos que fazem 
+parte da página web. Sempre que um atributo
+pertencente a este objeto é chamado, será criado
+uma variavel que faz referência ao respectivo
+elemento html, de acordo com o parametro informado
+no queryselector.
+que permite adicionar e editar produtos
+f)handlers;
+g)events;
+h)structures;
+i)actions;
+j)procedures;
+k)utils;
+l)init.
