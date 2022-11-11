@@ -1,53 +1,49 @@
 const inputCep = document.querySelector("#cep");
 
 /*FUNCAO QUE DEU CERTO*/
-inputCep.addEventListener("input",(event) => {
- 
-    let position = event.target.selectionStart;
-    const newValueCep = inputCep.value.replace(/[^0-9]/g,"")
-   
-    if (newValueCep.length <= 5) inputCep.value = newValueCep;
+inputCep.addEventListener("input", (event) => {
+	let position = event.target.selectionStart;
+	const newValueCep = inputCep.value.replace(/[^0-9]/g, "");
 
-    else {
-        inputCep.value = newValueCep.slice(0,5) + "-" + newValueCep.slice(5,8);
-        if (newValueCep.length >= 6 && position == 6) position++;
-    }
+	if (newValueCep.length <= 5) inputCep.value = newValueCep;
+	else {
+		inputCep.value = newValueCep.slice(0, 5) + "-" + newValueCep.slice(5, 8);
+		if (newValueCep.length >= 6 && position == 6) position++;
+	}
 
-    event.target.selectionEnd = position;
+	event.target.selectionEnd = position;
 
-    //Fill field with API datas about Address
-    if (inputCep.value.length === 9){
-        procuraLocal(inputCep.value);
-    }
-   
-})
+	//Fill field with API datas about Address
+	if (inputCep.value.length === 9) {
+		procuraLocal(inputCep.value);
+	}
+});
 
 /*FETCH API TO GET DATAS*/
 
-function procuraLocal(cep){
+function procuraLocal(cep) {
+	let search = cep.replace("-", "");
 
- let search = cep.replace("-","");
- 
-    const options = {
-        method: "GET",
-        mode:"cors",
-        cache: "default"
-    }
-    fetch(`https://viacep.com.br/ws/${search}/json/`,options)
-    .then((response) => { response.json()
-        .then((data) => showData(data))
-    })
-    .catch(error => console.log("Deu erro: "+error,message))
+	const options = {
+		method: "GET",
+		mode: "cors",
+		cache: "default",
+	};
+	fetch(`https://viacep.com.br/ws/${search}/json/`, options)
+		.then((response) => {
+			response.json().then((data) => showData(data));
+		})
+		.catch((error) => console.log("Deu erro: " + error, message));
 }
 
 const showData = (result) => {
-    for (const campo in result) {
-        if (document.querySelector("#"+campo)) {
-            console.log(campo)
-            document.querySelector("#"+campo).value = result[campo]
-        }    
-    }
-}
+	for (const campo in result) {
+		if (document.querySelector("#" + campo)) {
+			console.log(campo);
+			document.querySelector("#" + campo).value = result[campo];
+		}
+	}
+};
 
 // para cada campo em result
 //armazena o nome dele nessa variável cmapo
@@ -55,10 +51,9 @@ const showData = (result) => {
 //posso usar essa notação de array
 //para pegar a informação que preciso
 
-
 //event blur-> after user take the focus i want to know
 //whats was typed on input
-//method replace seaching for something, then 
+//method replace seaching for something, then
 //change by another one, in this case, change by
 //nothing, this way, keeping only numbers
 /*
@@ -91,7 +86,7 @@ cep.addEventListener("blur",(e)=>{
 //else its bad, use ".catch()"
 //  Trata a reposta o formato JSON: response.json()})
 // a conversão em formato JSON também retorna uma promessa
-//por isos preciso colocar um .then no json também 
+//por isos preciso colocar um .then no json também
 //com o objetivo de saber de deu certo
 //another way to write a arrow function is: e=>console, dont need
 //() nem {}
