@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Javascript - Aula 10</title>
+
+        <link rel="stylesheet" type="text/css" href="index.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        >
+    </head>
+
+    <body>
+        <form>
+            <h1>Cadastro de produto</h1>
+
+            <input type="hidden" name="id" />
+
+            <div class="input">
+                <label for="name">Nome</label>
+                <input type="text" name="name" />
+            </div>
+
+            <div class="input">
+                <label for="birthdate">Descrição</label>
+                <textarea name="description"></textarea>
+            </div>
+
+            <div class="input">
+                <label for="value">Value (R$)</label>
+                <input type="text" name="value" />
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="button-black" id="button-submit-products">Incluir produto</button>
+                <button type="button" class="button-red" id="button-cancel-product-edition">Cancelar atualização</button>
+				<button type="button" class="button-white" id="button-list-products">Listar produtos</button>
+            </div>
+
+            <p id="msg-success" class="msg-success"></p>
+            <p id="msg-error" class="msg-error"></p>
+        </form>
+
+        <div id="result"></div>
+
+        <div id="modal"></div>
+
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
