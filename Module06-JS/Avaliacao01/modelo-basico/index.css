@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 10px;
+	font-family: "Roboto", sans-serif;
+	color: var(--font-primary);
+}
+:root {
+	--main: white;
+	--primary: rgb(220, 220, 231);
+	--secundary: orange;
+	--font-primary: black;
+	--font-secundary: white;
+	--font-hover: white;
+}
+.dark-mode:root {
+	--main: rgb(63, 59, 59);
+	--primary: rgb(5, 5, 63);
+	--secundary: rgb(241, 157, 1);
+	--font-primary: white;
+	--font-secundary: rgb(61, 59, 59);
+	--font-hover: black;
+}
+html {
+	transition: background-color 2s ease;
+}
+
+body {
+	background-color: var(--main);
+}
+.form-container {
+	width: 100%;
+}
+.flex-col-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--primary);
+}
+.flex-row-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--primary);
+}
+.title-keyboard {
+	margin-bottom: 2rem;
+}
+.keyboard {
+	display: flex;
+}
+.keyboard div {
+	display: flex;
+	align-items: flex-end;
+	background-color: var(--main);
+	padding: 0.5rem;
+	width: 3rem;
+	height: 10rem;
+	cursor: pointer;
+	border: solid 0.1rem gray;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	box-shadow: 0rem 0.8rem 0rem gray;
+	position: relative;
+	bottom: 0rem;
+	justify-content: center;
+}
+.keyboard div:hover {
+	color: var(--secundary);
+}
+.keyboard div:active {
+	background-color: var(--primary);
+	transform: translate(0, 0.7rem);
+	box-shadow: 0rem 0.1rem 0rem gray;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0.5rem 1rem 1rem;
+}
+h1 {
+	font-size: 2.5rem;
+}
+h2 {
+	margin-top: 1rem;
+	font-size: 2rem;
+}
+
+form {
+	max-width: 40rem;
+	padding: 1rem;
+	background-color: var(--font-primary);
+	border: 0.2rem solid var(--secundary);
+	border-radius: 2rem;
+}
+.form-div {
+	width: 95%;
+	padding: 0.3rem 0rem;
+	border: none;
+}
+fieldset {
+	border: none;
+}
+legend {
+	position: relative;
+	left: 3rem;
+}
+label,
+h3 {
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+input {
+	margin: 0 0.5rem;
+	font-size: 1.6rem;
+	border-radius: 1rem;
+}
+input[type="button"],
+select {
+	background-color: var(--secundary);
+	color: var(--font-secundary);
+	font-size: 1.6rem;
+	margin: 0.5rem 1rem;
+	padding: 0.2rem 1rem;
+	border-radius: 1rem;
+	cursor: pointer;
+}
+option {
+	font-size: 1.6rem;
+}
+
+.number {
+	width: 20%;
+}
+.date {
+	width: 15%;
+}
+textarea {
+	border-radius: 1rem;
+}
+
+.message-error {
+	color: red;
+	font-size: 1.6rem;
+}
+.message-okay {
+	color: green;
+	font-size: 1.6rem;
+}
+
+#icon-mode {
+	height: 3rem;
+	transition: all 1s;
+}
+.darkModeOn {
+	transform: rotate(0deg);
+}
+a {
+	font-size: 2rem;
+}
+
+#inputDate {
+	text-align: center;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="shortcut icon" href="./logo-white.png" type="image/x-icon" />
+		<title>Testes</title>
+	</head>
+	<body class="flex-column-start">
+		<h1>Product Store</h1>
+		<h2>
+			To add new products, enter in the inputs name and price, and press
+			"Create".
+		</h2>
+		<form class="flex-column-between">
+			<label for="nameProduct"
+				>Name:<input id="nameProduct" type="text"
+			/></label>
+			<label for="priceProduct"
+				>Price:<input id="priceProduct" type="text"
+			/></label>
+			<div class="flex-center">
+				<input type="button" id="create" value="Create" />
+				<input type="button" id="showList" value="Show list" />
+				<input type="button" id="hiddenList" value="Hidden list" />
+			</div>
+		</form>
+
+		<div id="container-delete-field">
+			<label for="idToDelete"
+				>Insert Product's ID:<input type="text" id="idToDelete"
+			/></label>
+			<input type="button" id="deleteButton" value="Delete" />
+		</div>
+
+		<p id="message"></p>
+		<table>
+			<thead></thead>
+			<tbody id="containerProducts"></tbody>
+		</table>
+		<!--CREATE A CONTAINER THERE ON ALL PAGE WHEN A ELEMENT IS DELETED-->
+		<section id="dark-box" class="hidden-element">
+			<div id="box-element" class="flex-column"></div>
+		</section>
+
+		<script src="./script.js"></script>
+	</body>
+</html>

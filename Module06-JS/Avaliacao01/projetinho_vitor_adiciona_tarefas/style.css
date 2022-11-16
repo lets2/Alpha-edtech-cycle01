@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.tarefa {
+	padding: 20px;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.padding-10 {
+	padding: 10px;
+}
+
+.margin-bottom-10 {
+	margin-bottom: 10px;
+}
+
+.descricao {
+	color: gray;
+	padding: 5px;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.padding-5 {
+	padding: 5px;
+}
+
+button:not(:disabled) {
+	cursor: pointer;
+}
+
+.editar {
+	padding: 5px;
+	margin-left: 5px;
+	background-color: beige;
+}
+
+.editar:hover {
+	background-color: BlanchedAlmond;
+}
+
+label {
+	display: inline-block;
+	padding: 5px;
+}
+
+.salvar {
+	padding: 5px;
+	margin-left: 5px;
+	background: #2e76cf;
+	color: white;
+	margin: 5px;
+}
+
+.salvar:hover {
+	background: #173b67;
+}
+
+.adicionar {
+	padding: 5px;
+	margin-left: 5px;
+	background: #9932cc;
+	color: white;
+	margin: 5px;
+}
+
+.adicionar:hover {
+	background: #483d8b;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="./logo-white.png" type="image/x-icon" />
+		<title>Projetinho: editor de tarefas</title>
+	</head>
+	<body>
+		<h1 class="padding-10">Minhas tarefas</h1>
+		<hr class="margin-bottom-10" />
+		<div class="padding-10" id="task-container">
+			<div class="tarefa clearfix" id="tarefa-1">
+				<p class="float-left padding-5">1</p>
+				<p class="descricao float-left">Estudar JS</p>
+				<button class="float-right editar">Editar</button>
+			</div>
+			<div class="tarefa clearfix" id="tarefa-2">
+				<p class="float-left padding-5">2</p>
+				<p class="descricao float-left">Lavar a louça</p>
+				<button class="float-right editar">Editar</button>
+			</div>
+			<div class="tarefa clearfix" id="tarefa-3">
+				<p class="float-left padding-5">3</p>
+				<p class="descricao float-left">Dominar o mundo</p>
+				<button class="float-right editar">Editar</button>
+			</div>
+		</div>
+		<hr class="margin-bottom-10" />
+		<div class="padding-10">
+			<h2>Editar tarefa</h2>
+			<label>Número: <input type="number" id="input-editar-numero" /></label>
+			<label>Texto: <input type="text" id="input-editar-texto" /></label>
+			<button class="salvar">Salvar</button>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

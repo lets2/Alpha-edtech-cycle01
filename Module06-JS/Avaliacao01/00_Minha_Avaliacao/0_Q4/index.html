@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css" />
+		<link
+			rel="shortcut icon"
+			href="./assets/logo-white.png"
+			type="image/x-icon"
+		/>
+		<title>Avaliação 01</title>
+	</head>
+	<body class="flex-col-center">
+		<div class="flex-col-center">
+			<button id="formData">
+				<div>
+					<label for="inputName">Name</label>
+					<input type="text" id="inputName" />
+				</div>
+				<div>
+					<label for="inputAge">Age</label>
+					<input type="number" id="inputAge" />
+				</div>
+				<div>
+					<label for="gender">Gender</label>
+					<select name="gender" id="gender">
+						<option value="F">F</option>
+						<option value="M">M</option>
+					</select>
+				</div>
+				<button id="buttonSend" type="submit">SEND</button>
+			</form>
+			<p id="paragrafo"></p>
+		</div>
+		<script src="./index.js"></script>
+	</body>
+</html>

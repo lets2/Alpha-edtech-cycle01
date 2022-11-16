@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="shortcut icon" href="./logo-white.png" type="image/x-icon" />
+		<title>Projetinho: contador</title>
+	</head>
+	<body>
+		<h1 class="text-3xl font-bold pl-2">Contador</h1>
+		<hr class="border-4 mb-4" />
+		<div class="flex pl-4">
+			<button
+				class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-2xl"
+				onclick="clicouMenos()"
+			>
+				-
+			</button>
+			<div class="text-2xl m-2 w-64 text-center" id="contagem-display-div">
+				zero
+			</div>
+			<button
+				class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-2xl"
+				onclick="clicouMais()"
+			>
+				+
+			</button>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

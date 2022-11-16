@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="shortcut icon" href="./logo-white.png" type="image/x-icon" />
+		<title>Modelo</title>
+	</head>
+	<body class="flex-col-center">
+		<img id="icon-mode" src="./dark-mode-off.svg" alt="" />
+		<h1>JS - Avaliação 01</h1>
+		<h2 id="title-keyboarder">
+			Music keyboard - Sound Effect from
+			<a
+				href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=78500"
+				target="_blank"
+				>Pixabay</a
+			>
+		</h2>
+
+		<section class="keyboard">
+			<div id="do"><span>DO</span></div>
+			<div id="re"><span>RE</span></div>
+			<div id="mi"><span>MI</span></div>
+			<div id="fa"><span>FA</span></div>
+			<div id="sol"><span>SOL</span></div>
+			<div id="la"><span>LA</span></div>
+			<div id="si"><span>SI</span></div>
+		</section>
+
+		<div class="form-container flex-col-center">
+			<h2>Form</h2>
+			<form class="flex-col-center">
+				<div class="form-div flex-row-center">
+					<label for="inputName">Name</label>
+					<input type="text" id="inputName" />
+				</div>
+				<div class="form-div flex-row-center">
+					<label for="inputNumber1">Number1</label>
+					<input class="number" type="text" id="inputNumber1" />
+					<label for="inputNumber2">Number2</label>
+					<input class="number" type="text" id="inputNumber2" />
+				</div>
+				<fieldset class="form-div flex-row-center">
+					<legend>Birthdate:</legend>
+					<label for="inputDay">Day</label>
+					<input class="date" type="text" id="inputDay" />
+					<label for="inputMonth">Month</label>
+					<input class="date" type="text" id="inputMonth" />
+					<label for="inputYear">Year</label>
+					<input class="date" type="text" id="inputYear" />
+				</fieldset>
+				<div class="form-div flex-row-center">
+					<label for="inputCep">CEP</label>
+					<input type="text" id="inputCep" />
+				</div>
+				<div class="form-div flex-row-center">
+					<label for="inputDate">Choose a date</label>
+					<input type="date" id="inputDate" />
+				</div>
+				<select name="box" id="box">
+					<option value="case1">Case 1</option>
+					<option value="case2">Case 2</option>
+					<option value="case3">Case 3</option>
+				</select>
+				<div>
+					<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+				</div>
+				<div>
+					<input type="button" value="Send" id="buttonSend" />
+					<input type="button" value="Validate" id="buttonValidate" />
+					<input type="button" value="Clear" id="buttonClear" />
+				</div>
+			</form>
+		</div>
+		<h2>Message zone1:</h2>
+		<div id="message1"></div>
+		<h2>Message zone2:</h2>
+		<div id="message2"></div>
+
+		<footer>
+			<div class=".container flex-row-center">
+				<p text>Copyright © 2022 | Lets - All Rights Reserved</p>
+			</div>
+		</footer>
+
+		<script src="./index.js"></script>
+	</body>
+</html>

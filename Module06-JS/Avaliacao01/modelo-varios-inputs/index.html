@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=
+    , initial-scale=1.0"
+		/>
+		<link rel="stylesheet" href="./index.css" />
+		<link
+			rel="shortcut icon"
+			href="./assets/logo-white.png"
+			type="image/x-icon"
+		/>
+		<title>Aula</title>
+	</head>
+	<body>
+		<div id="container-all" class="flex-col-center">
+			<h1>First Avaliation</h1>
+			<form id="formNew" class="flex-col-center">
+				<div class="field">
+					<label for="fullname">Nome completo</label>
+					<input type="text" id="fullname" />
+				</div>
+				<div class="field">
+					<label for="cep">CEP</label>
+					<input type="text" id="cep" />
+				</div>
+				<div class="field">
+					<label for="gender">Gênero</label>
+					<select name="" id="gender">
+						<option value="Masculino">Masculino</option>
+						<option value="Feminino">Feminino</option>
+						<option value="Outro">Outro</option>
+					</select>
+				</div>
+				<div class="field">
+					<label for="bDate">Data de nascimento</label>
+					<input type="date" id="bDate" />
+				</div>
+				<input type="button" id="createClient" value="Cadastrar Cliente" />
+				<input type="button" id="listClients" value="Listar Clientes" />
+			</form>
+			<div id="message"></div>
+			<div id="table">
+				<table id="table-body"></table>
+			</div>
+		</div>
+
+		<script src="./index.js"></script>
+	</body>
+</html>
