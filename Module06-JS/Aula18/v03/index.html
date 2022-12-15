@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+		<title>Aula 18 | API</title>
+	</head>
+	<body class="flex-col-start">
+		<header class="flex-col-center">
+			<h1>PREVISÃO DO TEMPO</h1>
+		</header>
+		<main id="root" class="flex-col-start">
+			<div id="container-select" class="container-input flex-col-center">
+				<label for="uf">Selecione:</label>
+				<select name="uf" id="uf">
+					<option value="" disabled selected>Escolha um Estado</option>
+				</select>
+				<select name="city" id="city" class="hidden"></select>
+			</div>
+			<div class="container-message">
+				<p id="message-error"></p>
+			</div>
+			<div id="container-result" class="hidden flex-col-center"></div>
+		</main>
+		<footer class="flex-col-center position-fixed">
+			<small>Copyright © 2022 | Lets.</small>
+		</footer>
+		<script src="./index.js"></script>
+	</body>
+</html>

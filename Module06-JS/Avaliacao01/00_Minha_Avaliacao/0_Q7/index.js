@@ -34,10 +34,13 @@ buttonReset.addEventListener("click", () => {
 
 buttonPrint.addEventListener("click", () => {
 	let index = 0;
+	let counterTimes = 0;
 	while (index < values.length) {
 		if (values[index][0] === "a") {
 			console.log(`Valor ${index}: ${values[index]} começa com a`);
+			counterTimes++;
 		}
 		index++;
 	}
+	console.log("Temos que", counterTimes, "items começam com a");
 });

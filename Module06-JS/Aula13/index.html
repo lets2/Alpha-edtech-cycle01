@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+		<title>Aula13 - Jogo da velha</title>
+	</head>
+	<body class="flex-col-center">
+		<div class="title-container flex-row-center">
+			<img class="title-img" src="./assets/x-black.svg" alt="letra x" />
+			<h1>JOGO DA VELHA</h1>
+			<img class="title-img" src="./assets/circle-black.svg" alt="círculo" />
+		</div>
+		<div id="gameBoard" class="flex-col-center">
+			<div class="flex-row-center">
+				<div class="element"></div>
+				<div class="element"></div>
+				<div class="element"></div>
+			</div>
+			<div class="flex-row-center">
+				<div class="element"></div>
+				<div class="element"></div>
+				<div class="element"></div>
+			</div>
+			<div class="flex-row-center">
+				<div class="element"></div>
+				<div class="element"></div>
+				<div class="element"></div>
+			</div>
+		</div>
+		<p id="message">It's player 1's turn!</p>
+		<div>
+			<button id="newGame">Novo jogo</button>
+		</div>
+
+		<script src="./index.js"></script>
+	</body>
+</html>

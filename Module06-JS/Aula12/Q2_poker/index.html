@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css" />
+		<link
+			rel="shortcut icon"
+			href="./assets/logo-white.png"
+			type="image/x-icon"
+		/>
+		<title>Aula 12 - Q2</title>
+	</head>
+	<body class="flex-col-start">
+		<main class="flex-col-start">
+			<h1>POKER</h1>
+			<section id="containerContent" class="flex-row-between">
+				<div id="containerDisplay" class="flex-col-start">
+					<div id="containerHand">
+						<img src="./assets/00back_cards_blue.PNG" alt="cassino table" />
+					</div>
+					<div id="containerMessage"></div>
+					<div id="containerButtons" class="flex-row-between">
+						<button id="pickCards">Picking a new hand</button>
+						<button id="shuffleDeck">Shuffle deck</button>
+						<div id="containerExample" class="flex-col-start">
+							<h3>See example of hand</h3>
+							<select name="selectCheatHand" id="selectCheatHand">
+								<option value="nothing">Nothing</option>
+								<option value="onePair">One Pair</option>
+								<option value="twoPair">Two Pair</option>
+								<option value="threeKind">Three of a Kind</option>
+								<option value="sequence">Sequence</option>
+								<option value="flush">Flush</option>
+								<option value="fullHouse">Full house</option>
+								<option value="fourKind">Four of a Kind</option>
+								<option value="straightFlush">Straight Flush</option>
+								<option value="royalFlush">Royal Flush</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div id="containerDeck" class="flex-col-end">
+					<h2>Cards on</h2>
+					<h2>deck:</h2>
+					<p id="numberCardsRemainsDeck">00</p>
+					<figure id="containerGif" class="frame">
+						<img
+							id="imageAndGif"
+							src="./assets/000_PNGinitial_imageraw_00_espelhado.PNG"
+							alt="deck image"
+						/>
+					</figure>
+				</div>
+			</section>
+		</main>
+
+		<script type="module" src="./index.js"></script>
+		<!--<script src="./conteudo.js"></script>-->
+	</body>
+</html>

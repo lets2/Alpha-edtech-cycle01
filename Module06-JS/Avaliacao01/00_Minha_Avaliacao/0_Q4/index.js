@@ -6,6 +6,7 @@ const inputAge = document.querySelector("#inputAge");
 const inputGenger = document.querySelector("#gender");
 
 buttonSend.addEventListener("click", (event) => {
+	event.preventDefault();
 	const messageWelcome = `Seja bem-vindo(a) ${inputName.value}, você tem ${inputAge.value} anos de idade`;
 	const person = {
 		name: inputName.value,

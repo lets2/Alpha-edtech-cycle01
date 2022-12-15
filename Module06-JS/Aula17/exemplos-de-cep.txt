@@ -1,0 +1,12 @@
+Exemplos:
+01153-000
+22031-000
+50070-050
+58071-510
+60060‑200
+
+https://maps.google.com/maps?q=-23.53115,-46.6527&hl=pt&z=14&output=embed
+
+
+fetch(`https://cep.awesomeapi.com.br/json/01153000`)
+

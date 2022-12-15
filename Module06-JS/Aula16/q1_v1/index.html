@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+		<title>Aula 16 | API</title>
+	</head>
+	<body class="flex-col-start">
+		<header class="flex-col-center">
+			<h1>Quote Currency</h1>
+		</header>
+		<main id="root" class="flex-col-start">
+			<section id="container-panel" class="flex-row-center">
+				<div class="flex-col-center input-container">
+					<label for="coins">Choose a currency</label>
+					<select name="coins" id="coins">
+						<option value="USD-BRL">Dólar Americano/Real Brasileiro</option>
+						<option value="USD-BRLT">
+							Dólar Americano/Real Brasileiro Turismo
+						</option>
+						<option value="CAD-BRL">Dólar Canadense/Real Brasileiro</option>
+						<option value="EUR-BRL">Euro/Real Brasileiro</option>
+						<option value="GBP-BRL">Libra Esterlina/Real Brasileiro</option>
+						<option value="ARS-BRL">Peso Argentino/Real Brasileiro</option>
+						<option value="BTC-BRL">Bitcoin/Real Brasileiro</option>
+						<option value="JPY-BRL">Iene Japonês/Real Brasileiro</option>
+						<option value="ETH-BRL">Ethereum/Real Brasileiro</option>
+					</select>
+				</div>
+				<div class="flex-col-center input-container">
+					<label for="initialDate">Initial date</label>
+					<input type="date" id="initialDate" />
+				</div>
+				<div class="flex-col-center input-container">
+					<label for="initialDate">Final date</label>
+					<input type="date" id="finalDate" />
+				</div>
+				<button id="searchButton">Search</button>
+			</section>
+			<p id="message"></p>
+			<section id="container-table">
+				<table>
+					<thead>
+						<tr>
+							<th>DATE</th>
+							<th>PURCHASE</th>
+							<th>SALE</th>
+							<th>MIN</th>
+							<th>MAX</th>
+						</tr>
+					</thead>
+					<tbody id="tableBody"></tbody>
+				</table>
+			</section>
+		</main>
+		<footer class="flex-col-center position-fixed">
+			<small>Copyright © 2022 | Lets.</small>
+		</footer>
+		<script src="./index.js"></script>
+	</body>
+</html>

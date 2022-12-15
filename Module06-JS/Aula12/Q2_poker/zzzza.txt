@@ -1,0 +1,17 @@
+spades->espadas
+hearts->coracao
+dimonds->ouro
+clubs->paus
+nipes are called suit
+
+Hand cards sorted in ascending order
+
+Pair.
+Two pair.
+Three of a kind.
+Sequence.//cincocartas em sequencia, nao importa naipe
+Flush//cinco cartas do mesmo naipe
+Full house.//um trio e um par
+Four of a kind.//quatro cartas do mesmo valor
+Straight flush.//sequencia com mesmo nipe
+Royal flush.//squencia de mesmo nipe usando A,K,Q,J and 10

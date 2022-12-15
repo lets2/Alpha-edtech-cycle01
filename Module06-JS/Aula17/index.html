@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+		<title>Aula 17 | API</title>
+	</head>
+	<body class="flex-col-start">
+		<header class="flex-col-center">
+			<h1>CONSULTAR CEP</h1>
+		</header>
+		<main id="root" class="flex-col-start">
+			<div class="container-input">
+				<label for="cep">Insira um CEP</label>
+				<input type="text" id="cep" />
+				<input
+					type="button"
+					value="Consultar"
+					id="check-cep"
+					class="cursor-pointer"
+				/>
+			</div>
+			<div class="container-message">
+				<p id="message-error"></p>
+			</div>
+			<div id="container-result" class="hidden flex-col-center"></div>
+			<div id="container-iframe"></div>
+		</main>
+		<footer class="flex-col-center position-fixed">
+			<small>Copyright © 2022 | Lets.</small>
+		</footer>
+		<script src="./index.js"></script>
+	</body>
+</html>

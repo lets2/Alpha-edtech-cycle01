@@ -1,0 +1,16 @@
+{
+  "name": "exemplo_14_spa_module_js",
+  "version": "1.0.0",
+  "description": "Creating a page with js only",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "node-static":"^0.7.11"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

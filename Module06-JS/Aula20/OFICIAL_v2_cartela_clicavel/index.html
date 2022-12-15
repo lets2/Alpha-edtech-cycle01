@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css" />
+		<link
+			rel="shortcut icon"
+			href="./assets/00-logo-05-green-light.png"
+			type="image/x-icon"
+		/>
+		<title>Aula 20 | Closures</title>
+	</head>
+	<body class="flex-col-start">
+		<header>
+			<h1>BINGO</h1>
+		</header>
+		<main class="flex-col-start">
+			<div id="opcoes" class="flex-row-center">
+				<label for="jogadores">Escolha o número de cartelas:</label>
+				<select name="jogadores" id="jogadores">
+					<option value="2">02</option>
+					<option value="3">03</option>
+					<option value="4">04</option>
+					<option value="5">05</option>
+					<option value="6">06</option>
+					<option value="7">07</option>
+					<option value="8">08</option>
+				</select>
+				<button id="iniciar">Iniciar</button>
+			</div>
+			<div id="container-geral" class="flex-row-start">
+				<aside id="container-globo" class="flex-col-start">
+					<h2><span id="rodada">00|00</span></h2>
+					<img
+						id="gif-globo"
+						src="./assets/globo_do_bingo_verde.png"
+						alt="globo do bingo"
+					/>
+					<p id="bola-chamada">00</p>
+					<div id="bolas-anteriores" class="flex-row-center">
+						<span id="b1" class="bola-anterior"></span>
+						<span id="b2" class="bola-anterior"></span>
+						<span id="b3" class="bola-anterior"></span>
+					</div>
+				</aside>
+				<section id="container-jogo" class="flex-col-start">
+					<div id="resultado" class="invisivel flex-col-start">
+						<h2>Vencedor:</h2>
+					</div>
+					<div id="container-cartelas"></div>
+				</section>
+			</div>
+		</main>
+		<footer class="flex-col-center position-fixed">
+			<small>Copyright © 2022 | Lets.</small>
+		</footer>
+		<script src="./index.js"></script>
+	</body>
+</html>

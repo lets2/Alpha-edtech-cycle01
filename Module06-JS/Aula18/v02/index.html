@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+		<title>Aula 18 | API</title>
+	</head>
+	<body class="flex-col-start">
+		<header class="flex-col-center">
+			<h1>PREVISÃO DO TEMPO</h1>
+		</header>
+		<main id="root" class="flex-col-start">
+			<div id="container-select" class="container-input">
+				<label for="uf">Selecione:</label>
+				<select name="uf" id="uf">
+					<option value="" disabled selected>Escolha um Estado</option>
+				</select>
+				<select name="city" id="city" class="hidden"></select>
+			</div>
+			<div class="container-message">
+				<p id="message-error"></p>
+			</div>
+			<div id="container-result" class="hidden flex-col-center"></div>
+		</main>
+		<footer class="flex-col-center position-fixed">
+			<small>Copyright © 2022 | Lets.</small>
+		</footer>
+		<script src="./index.js"></script>
+	</body>
+</html>
+<!-- 
+EXAMPLE OF A FULL COMPLETE DATA WEATHER FORECAST
+<div class="container-day-complete flex-col-start">
+	<h2>CIDADE - 04/12/2022 - DOMINGO</h2>
+	<p><span>Temp. mín:</span> 25°C <span>Temp. máx:</span> 35°C</p>
+	<div class="card flex-row-start">
+		<div id="manha" class="flex-col-start">
+			<h3>MANHÃ</h3>
+			<img src="./assets/icon-01-day.PNG" alt="clima de dia" />
+			<p>Resumo:Muitas nuvens</p>
+		</div>
+		<div id="tarde" class="flex-col-start">
+			<h3>TARDE</h3>
+			<img src="./assets/icon-01-day.PNG" alt="clima de tarde" />
+			<p>Resumo:Nublado com pancadas de chuva e trovoadas isoladas</p>
+		</div>
+		<div id="noite" class="flex-col-start">
+			<h3>NOITE</h3>
+			<img src="./assets/icon-01-night.PNG" alt="clima de noite" />
+			<p>Resumo:Muitas nuvens</p>
+		</div>
+	</div>
+</div>
+
+<div class="container-day-complete flex-col-start">
+	<h2>CIDADE - 05/12/2022 - SEGUNDA</h2>
+	<p><span>Temp. mín:</span> 20°C <span>Temp. máx:</span> 43°C</p>
+	<div class="card flex-row-start">
+		<div id="manha" class="flex-col-start">
+			<h3>MANHÃ</h3>
+			<img src="./assets/icon-01-day.PNG" alt="clima de dia" />
+			<p>Resumo:Muitas nuvens com pancadas de chuva isoladas</p>
+		</div>
+		<div id="tarde" class="flex-col-start">
+			<h3>TARDE</h3>
+			<img src="./assets/icon-01-day.PNG" alt="clima de tarde" />
+			<p>Resumo:Nublado com pancadas de chuva e trovoadas isoladas</p>
+		</div>
+		<div id="noite" class="flex-col-start">
+			<h3>NOITE</h3>
+			<img src="./assets/icon-01-night.PNG" alt="clima de noite" />
+			<p>Resumo:Muitas nuvens com chuva isolada</p>
+		</div>
+	</div>
+</div>
+EXAMPLE OF A RESUME DATA WEATHER FORECAST
+<div class="container-day-resume flex-col-start">
+	<h2>CIDADE - 07/12/2022 - QUARTA</h2>
+	<p><span>Temp. mín:</span> 12°C <span>Temp. máx:</span> 37°C</p>
+	<img src="./assets/icon-01-day.PNG" alt="clima de dia" />
+	<p>Resumo:Muitas nuvens com pancadas de chuva isoladas</p>
+</div>
+<div class="container-day-resume flex-col-start">
+	<h2>CIDADE - 08/12/2022 - QUINTA</h2>
+	<p><span>Temp. mín:</span> 26°C <span>Temp. máx:</span> 32°C</p>
+	<img src="./assets/icon-01-day.PNG" alt="clima de dia" />
+	<p>Resumo:Muitas nuvens com possibilidade de chuva isolada</p>
+</div> -->

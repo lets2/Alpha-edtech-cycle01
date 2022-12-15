@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css" />
+		<link
+			rel="shortcut icon"
+			href="./assets/img/logo.png"
+			type="image/x-icon"
+		/>
+		<title>Aula 15Q3 | Alarm</title>
+	</head>
+	<body>
+		<header class="flex-col-center">
+			<h1>Countdown Timer</h1>
+		</header>
+		<main id="root" class="flex-col-center">
+			<div id="container-alarm" class="flex-col-center">
+				<section>
+					<div id="container-select" class="flex-row-center">
+						<div>
+							<h3>Min.</h3>
+							<select name="minutes" id="minutes"></select>
+						</div>
+						<div>
+							<h3>Sec.</h3>
+							<select name="seconds" id="seconds"></select>
+						</div>
+					</div>
+					<button id="btn-on-off">Start Alarm</button>
+				</section>
+				<span id="alarm-countdown" class="countdown">00:00</span>
+				<p id="message"></p>
+			</div>
+		</main>
+		<footer class="flex-col-center">
+			<div class="flex-row-center">
+				<p>
+					Sound effects:
+					<a
+						href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=27477"
+						target="_blank"
+						>Pixabay</a
+					>
+				</p>
+			</div>
+			<p>Copyright © 2022 | Lets.</p>
+		</footer>
+		<script src="./index.js"></script>
+	</body>
+</html>
