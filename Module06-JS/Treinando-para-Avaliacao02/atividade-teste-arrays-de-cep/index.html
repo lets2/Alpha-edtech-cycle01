@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="./00-logo-08-orange.png"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="index.css" />
+		<title>Test</title>
+	</head>
+	<body>
+		<h1>Request to a cep API</h1>
+		<div>
+			<label for="cep">Insert a Cep1</label>
+			<input type="text" id="cep1" class="cep" placeholder="00000-000" />
+			<input type="text" id="cep2" class="cep" placeholder="11111-111" />
+			<input type="text" id="cep3" class="cep" placeholder="22222-222" />
+
+			<input type="button" value="Get data" id="button-get" />
+		</div>
+		<div id="message-error"></div>
+		<div id="result"></div>
+		<script src="./index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css" />
+		<link
+			rel="shortcut icon"
+			href="./assets/00-logo-04-piscina.png"
+			type="image/x-icon"
+		/>
+		<title>Avaliação 02 | Itens B,C e D</title>
+	</head>
+	<body class="flex-col-start">
+		<h1>Formulário - Email e data de nascimento</h1>
+		<form class="flex-col-start">
+			<label for="email">E-mail:</label>
+			<input
+				type="text"
+				name="email"
+				id="email"
+				placeholder="exemplo@mail.com"
+			/>
+			<label for="birthDate">Data de nascimento:</label>
+			<input
+				type="date"
+				value="birthDate"
+				id="birthDate"
+				placeholder="dd/mm/aaaa"
+			/>
+			<input type="button" value="Buscar" id="send" />
+		</form>
+		<div id="message-error"></div>
+		<div id="result"></div>
+
+		<script src="./index.js"></script>
+	</body>
+</html>

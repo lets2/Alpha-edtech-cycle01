@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Aula 22 | Class</title>
+		<link rel="stylesheet" href="./index.css" />
+		<link
+			rel="shortcut icon"
+			href="./assets/logo-red.png"
+			type="image/x-icon"
+		/>
+	</head>
+	<body class="flex-col-start">
+		<h1>Avatar creator</h1>
+		<form class="flex-col-start">
+			<input
+				type="text"
+				name="avatar-name"
+				id="avatar-name"
+				placeholder="Avatar name"
+			/>
+			<input
+				type="number"
+				name="avatar-x"
+				id="avatar-x"
+				placeholder="x-coordinate"
+			/>
+			<input
+				type="number"
+				name="avatar-y"
+				id="avatar-y"
+				placeholder="y-coordinate"
+			/>
+			<input
+				type="number"
+				name="avatar-bag"
+				id="avatar-bag"
+				placeholder="number of coins in the bag"
+			/>
+			<input type="button" value="Create" id="create" />
+		</form>
+		<h2>Manipulating the avatar</h2>
+		<div>
+			<select name="your-avatar" id="your-avatar">
+				<option value="" disabled selected>Choose your-avatar</option>
+			</select>
+		</div>
+		<div id="container-control"></div>
+		<div id="message-error"></div>
+		<div id="message-result"></div>
+		<script src="./index.js"></script>
+	</body>
+</html>
