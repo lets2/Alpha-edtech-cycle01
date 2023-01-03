@@ -1,0 +1,10 @@
+./
+├── linux
+│   └── history.txt
+├── myTreeFromAlpha.txt
+├── servidores
+│   ├── distros.txt
+│   └── ubuntu.txt
+└── ubuntu.txt
+
+2 directories, 5 files

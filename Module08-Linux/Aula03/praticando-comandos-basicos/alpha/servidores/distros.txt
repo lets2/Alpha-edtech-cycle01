@@ -1,0 +1,7 @@
+Here I wrote some  distros used to servers:
+Ubuntu Server
+Debian
+OpenSUSE
+Fedora Server
+Fedora CoreOS
+Red Hat
