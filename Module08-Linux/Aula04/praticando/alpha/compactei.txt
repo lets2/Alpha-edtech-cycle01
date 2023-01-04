@@ -1,0 +1,5 @@
+First line from my file
+Now, this is my second line
+The previous line was wrotten in Vim
+So I can practice how to use this program
+Later I will seaching for others text editors

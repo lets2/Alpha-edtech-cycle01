@@ -1,0 +1,4 @@
+This is my new file, where a write a new command
+in Vim, and I will practice this too much, my 
+dog is very strong and a like him so much
+End

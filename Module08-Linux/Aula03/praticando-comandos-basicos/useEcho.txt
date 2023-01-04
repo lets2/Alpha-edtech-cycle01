@@ -1,0 +1,9 @@
+I add this message to be fun
+if you use two arrows (>>),add content in file, but if you use only one (>), the previous content wil be replaced and you will lose everything
+for example: echo (some word between quotes) >> file.txt, add a message on file, if your file doesnt exist so is create
+one line \ another line
+second test another lineaaa
+aaaaa
+I will insert some more informations about 
+my experience with English.
+So, I need you give a strong hug
