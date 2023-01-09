@@ -1,0 +1,11 @@
+Now Im writing about my first experience with Vim editor
+I need press down "i" key to activate the insert mode
+The line below was copied with Normal mode using 
+some shortcuts like: V,p,$,0, All are very useful
+But I need to be continue practice more and more
+I need press down "i" key to activate the insert mode
+To change to Normal mode just press "Esc" key.
+Vim counts with 4 modes. It starts with Normal mode
+To exit use Esc to change to normal mode, next, 
+press ":x" and press Enter, Vim saves and  ends the program.
+This mode opened when you press "Esc"+":" is known as Command Mode 
