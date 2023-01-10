@@ -1,0 +1,11 @@
+O que é shell script? Entenda e veja exemplos de aplicações
+https://www.certificacaolinux.com.br/o-que-e-shell-script/
+
+Introdução ao Shell Script no Linux
+https://www.devmedia.com.br/introducao-ao-shell-script-no-linux/25778
+
+Comandos Bash Linux – Guia Básico e Exemplos de Uso
+https://www.hostinger.com.br/tutoriais/comandos-bash-linux
+
+Programação Shell Script: O Básico Para Iniciar E Criar Scripts No Bash Do Linux
+https://e-tinet.com/linux/programacao-shell-script/

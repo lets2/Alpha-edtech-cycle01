@@ -1,0 +1,2 @@
+This file will be send by terminal SSH mode.
+So, its possible to know the way of send.

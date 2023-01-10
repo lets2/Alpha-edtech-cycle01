@@ -1,0 +1,2 @@
+This file will be send by PUTTY application.
+I need to install PUTTY here.

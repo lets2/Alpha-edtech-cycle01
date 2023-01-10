@@ -1,15 +1,14 @@
 Protocolo SSH: O que é e como funciona?
-
 https://www.hostgator.com.br/blog/o-que-e-protocolo-ssh/
+
 Como usar o SSH para se conectar a um servidor remoto?
-
 https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server-pt
+
 Como usar o comando SCP para transferir arquivos no linux?
-
 https://www.hostinger.com.br/tutoriais/usar-comando-scp-linux-para-transferir-arquivos#:~:text=um%20Comando%20SCP-,O%20Que%20%C3%A9%20Comando%20SCP%3F,ou%20entre%20dois%20locais%20remotos
+
 Como usar o PuTTy SSH e se conectar com sua hospedagem
-
 https://www.hostinger.com.br/tutoriais/como-se-conectar-servidor-vps-usando-terminal-ssh
-Download do Putty
 
+Download do Putty
 https://www.putty.org/
