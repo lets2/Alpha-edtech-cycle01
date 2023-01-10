@@ -1,0 +1,8 @@
+usuariocriado
+lets
+senha:
+54321
+fullname:lets
+room number:01
+work phone:deixei vazio
+deixei o resto todo vazio
