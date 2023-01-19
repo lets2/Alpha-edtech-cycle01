@@ -1,0 +1,7 @@
+COUNTRY NAME: BR
+STATE OR PROVINCE: BAHIA
+LOCALITY NAME, OU SEJA, CITY:SALVADOR
+COMMON NAME (MAIS IMPORTANTE): site1.com
+
+
+o que estiver escrito no common nam eprecisa ser exatamente igual ao domínio que eu utilziar
