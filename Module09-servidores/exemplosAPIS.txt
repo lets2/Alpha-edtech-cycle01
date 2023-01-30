@@ -1,0 +1,5 @@
+exemplos de API REST:
+https://documenter.getpostman.com/view/8854915/Szf7znEe
+
+https://apilist.fun/
+
