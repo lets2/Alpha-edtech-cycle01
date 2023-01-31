@@ -1,0 +1,9 @@
+Alguns links de vídeos que Thiago forneceu
+para podermos entender sobre API RESTFUL:
+AULA 05
+https://drive.google.com/drive/folders/1kOK6T-ef1rvZfRTP6Otm7qXGrWmye7re
+AULA 06
+https://drive.google.com/drive/folders/1QkOoEq7V-q1sK5YoiufgaWHI58lu2pO6
+AULA08 (NAO TEM AULA 07)
+https://drive.google.com/drive/folders/1uMwF8n1aTZxa8-gGjrPJ9KvEdZqdMELd
+
