@@ -1,0 +1,22 @@
+Para o postgres remoto
+que criei na maquina virtual que tinha o nodejs instalado
+coloquei  primeiro banco de dados assim:
+nome de usuario:
+letsdb
+senha:
+'40028922'
+nome do banco de dados, cujo dono é letsdb:
+aula03db
+------
+Deu problema e crie um clone partindo da orginal
+nele eu criei um
+role:letsdb
+o  nome do band de dados ficou tbm letsdb
+e criei um usuario ubuntu com o memso nome
+letsdb e senha 54321
+segui esse tutorial:
+https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart
+https://serverspace.io/support/help/how-to-install-postgresql-on-ubuntu-20
+esse ultimo tem um passo q acho relevante:
+systemctl enable postgresql.service; service postgresql start
+

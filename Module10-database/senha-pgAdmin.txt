@@ -1,0 +1,6 @@
+Instalei os dois, mas no tutorial, comenta-se que  para configurar o o webserver, se instalou a versão “pgadmin4-web”, utiliza-se “sudo /usr/pgadmin4/bin/setup-web.sh”. Vou fazer isso, já que instalei os dois. Nota-se que ele vai executar o script “setup-web.sh”.
+
+Ele pede e-mail e password para o pgAdmin:
+
+Coloquei e-mail:letoniojs@gmail.com
+senha:40028922

@@ -1,0 +1,142 @@
+CREATE TABLE users (
+	id uuid NOT NULL,
+	name TEXT NOT NULL,
+	email TEXT NOT NULL UNIQUE,
+	password TEXT NOT NULL,
+	created_at TIMESTAMP NOT NULL,
+	update_at TIMESTAMP NOT NULL,
+	delete_at TIMESTAMP NOT NULL,
+	CONSTRAINT users_pk PRIMARY KEY (id)
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE products (
+	id uuid NOT NULL,
+	name TEXT NOT NULL,
+	category_id uuid NOT NULL,
+	brand_id uuid NOT NULL,
+	price DECIMAL NOT NULL,
+	user_id uuid NOT NULL,
+	quant_available integer NOT NULL,
+	created_at TIMESTAMP NOT NULL,
+	update_at TIMESTAMP NOT NULL,
+	delete_at TIMESTAMP NOT NULL,
+	CONSTRAINT products_pk PRIMARY KEY (id)
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE shopping_carts (
+	id uuid NOT NULL,
+	user_id uuid NOT NULL,
+	status_id uuid NOT NULL,
+	created_at TIMESTAMP NOT NULL,
+	update_at TIMESTAMP NOT NULL,
+	delete_at TIMESTAMP NOT NULL,
+	CONSTRAINT shopping_carts_pk PRIMARY KEY (id)
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE categories (
+	id uuid NOT NULL,
+	name TEXT NOT NULL,
+	CONSTRAINT categories_pk PRIMARY KEY (id)
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE product_brands (
+	id uuid NOT NULL,
+	name TEXT NOT NULL,
+	CONSTRAINT product_brands_pk PRIMARY KEY (id)
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE carts_products (
+	cart_id uuid NOT NULL,
+	product_id uuid NOT NULL,
+	quantify integer NOT NULL,
+	created_at TIMESTAMP NOT NULL,
+	update_at TIMESTAMP NOT NULL,
+	delete_at TIMESTAMP NOT NULL
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE cart_status (
+	id uuid NOT NULL,
+	name TEXT NOT NULL,
+	CONSTRAINT cart_status_pk PRIMARY KEY (id)
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE orders (
+	id uuid NOT NULL,
+	cart_id uuid NOT NULL,
+	order_status_id uuid NOT NULL,
+	created_at TIMESTAMP NOT NULL,
+	update_at TIMESTAMP NOT NULL,
+	delete_at TIMESTAMP NOT NULL,
+	CONSTRAINT orders_pk PRIMARY KEY (id)
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE order_status (
+	id uuid NOT NULL,
+	name TEXT NOT NULL,
+	CONSTRAINT order_status_pk PRIMARY KEY (id)
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+
+ALTER TABLE products ADD CONSTRAINT products_fk0 FOREIGN KEY (category_id) REFERENCES categories(id);
+ALTER TABLE products ADD CONSTRAINT products_fk1 FOREIGN KEY (brand_id) REFERENCES product_brands(id);
+ALTER TABLE products ADD CONSTRAINT products_fk2 FOREIGN KEY (user_id) REFERENCES users(id);
+
+ALTER TABLE shopping_carts ADD CONSTRAINT shopping_carts_fk0 FOREIGN KEY (user_id) REFERENCES users(id);
+ALTER TABLE shopping_carts ADD CONSTRAINT shopping_carts_fk1 FOREIGN KEY (status_id) REFERENCES cart_status(id);
+
+
+
+ALTER TABLE carts_products ADD CONSTRAINT carts_products_fk0 FOREIGN KEY (cart_id) REFERENCES shopping_carts(id);
+ALTER TABLE carts_products ADD CONSTRAINT carts_products_fk1 FOREIGN KEY (product_id) REFERENCES products(id);
+
+
+ALTER TABLE orders ADD CONSTRAINT orders_fk0 FOREIGN KEY (cart_id) REFERENCES shopping_carts(id);
+ALTER TABLE orders ADD CONSTRAINT orders_fk1 FOREIGN KEY (order_status_id) REFERENCES order_status(id);
+
+
+
+
+
+
+
+
+
+
+
+
