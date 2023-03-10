@@ -1,0 +1,51 @@
+ ADD USER:
+ INSERT INTO users
+ (id,name,email,password,created_at)
+ VALUES
+ (
+ 'bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb',
+ 'felipe',
+ 'felipefe@mail.com',
+ '1234',
+ now()
+ );
+ SELECT * FROM users;
+ 
+ Com um usuario adicionado, podemos inicializar um carrinho:
+ 
+INSERT INTO shopping_carts (id,user_id,status_id,created_at)
+VALUES (
+	gen_random_uuid(),
+	'bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb',
+	'7a41f2eb-b2d1-488b-81b2-5eea433863ae',
+	NOW()
+);
+SELECT * FROM shopping_carts;
+ 
+ 
+ Adicionei um carrinho para o usuario 'bbbbb...'
+ recebendo o id do carrinho = '773bfa86-42db-496c-878b-625a6af7ea04'
+ 
+ Agora posso começar a adicionar produtos a esse carrinho:
+ Faz-se a associação, id do carrinho onde será adcionado e o 
+ id do produto:
+ 
+ 
+ ----------------------
+ 
+ 
+ 
+ SELECT carts_p.cart_id,carts_p.product_id,p.name,p.price
+ FROM carts_products AS carts_p
+ JOIN products AS p ON  p.id = carts_p.product_id
+ WHERE carts_p.cart_id='dd44fc81-3d31-4e32-ae8b-92c85e6705ff';
+ 
+ 
+ 
+ Abaixo, estamos fazendo um join entre as tabelas carts_products e products na coluna product_id, de modo que possamos obter o preço dos produtos. Em seguida, estamos usando o comando GROUP BY para agrupar os resultados por cart_id e o comando SUM para somar o preço de cada produto associado a um cart_id específico.
+Note que esta consulta retornará uma linha para cada cart_id único, com a soma do preço de todos os produtos associados a ele.
+ 
+SELECT cart_id, SUM(price)
+FROM carts_products
+JOIN products ON carts_products.product_id = products.id
+GROUP BY cart_id;

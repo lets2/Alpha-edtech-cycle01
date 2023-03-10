@@ -1,0 +1,31 @@
+table{
+    margin: 20px 10px;
+}
+thead{
+    background-color: #ac5cfc;
+}
+tbody tr:nth-child(odd){
+    background-color: #ffffff;
+}
+tbody tr:nth-child(even){
+    background-color: #d5abff;
+}
+
+table th,table td{
+    padding: 5px 30px;
+    text-align: center;
+}
+
+
+#logout-button{
+    border: none;
+    border-radius: 5px;
+    background-color: #ac5cfc;
+    color: white;
+    padding: 5px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#logout-button:hover{
+    background-color: #b983f0;
+}

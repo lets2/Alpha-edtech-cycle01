@@ -1,0 +1,14 @@
+
+Caso deseje atualizar uma informação e quer fazer uma subquery
+acha o id em outra tabela, e depois faz a principal que eh
+atualizar uma tabela com esse id:
+
+UPDATE shop.products
+SET category_id = (SELECT category_id FROM shop.categories WHERE category_name = 'television')
+WHERE product_name = 'Televisão';
+
+OUtra forma de adicionar o category_id da categoria "television" à tabela products é a seguinte:
+
+Aqui, estamos usando a cláusula WITH para criar uma subquery que seleciona o category_id da categoria "television". Em seguida, estamos usando o comando UPDATE para atualizar o registro com o nome "minha televisão" na tabela products, definindo o category_id para o valor selecionado na subquery.
+
+Observe que esta consulta só atualizará um registro. Se houver mais de um registro com o nome "minha televisão", apenas o primeiro será atualizado. Se você deseja atualizar todos os registros com o nome "minha televisão", você precisará adicionar a cláusula WHERE apropriada.

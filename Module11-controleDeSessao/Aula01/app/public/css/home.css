@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#root{
+    width: 100%;
+    height: 100vh;
+    background-color: #00ffff;
+}
+#root div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    padding: 20px;
+    text-align: center;
+}
+
+#go-login-page{
+    border: none;
+    border-radius: 10px;
+    background-color: #ac5cfc;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#go-login-page:hover{
+    background-color: #b983f0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}

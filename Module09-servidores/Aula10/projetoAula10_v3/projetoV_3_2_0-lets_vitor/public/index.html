@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="./assets/logo-lets.png"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="./index.css" />
+		<title>Aula10 - API</title>
+	</head>
+	<body>
+		<header class="flex-col-center">
+			<h1>FRONT API</h1>
+		</header>
+		<main class="flex-col-center">
+			<!-- User Register-->
+			<div class="container-form">
+				<h2>FORMULÁRIO DE CADASTRO DE USUÁRIOS</h2>
+				<h3>Para inserir usuários na lista, preencha os campos abaixo.</h3>
+				<hr />
+				<form>
+					<input
+						type="text"
+						name="fullName"
+						id="fullName"
+						placeholder="Nome Completo"
+					/>
+					<input type="email" name="email" id="email" placeholder="E-mail" />
+					<div>
+						<input type="button" value="Cadastrar" id="button-register"/>
+						<input type="button" value="Salvar mudanças" id="button-save-changes" class="hidden" data-saveid="0"/>		
+					</div>
+				</form>
+			</div>
+			<!--Table with data about each user registered-->
+			<div class="container-table">
+				<h2>LISTA DE USUÁRIOS CADASTRADOS</h2>
+				<h3>
+					Abaixo, você pode ver os usuários registrados, podendo editá-los ou
+					removê-los
+				</h3>
+				<hr />
+				<table>
+					<thead id="table-head">
+						<tr>
+							<th>#ID</th>
+							<th>NOME</th>
+							<th>E-MAIL</th>
+							<th>EDITAR</th>
+							<th>EXCLUIR</th>
+						</tr>
+					</thead>
+					<tbody id="table-body">
+						<!-- Example of row
+						<tr>
+							<td>0001</td>
+							<td>Maria Eliza de Oliveira Silva</td>
+							<td>mariaeliza@gmail.com</td>
+							<td>
+								<img
+									src="./assets/pencil-5-svgrepo-com.svg"
+									alt="pencil icon"
+									class="pencil"
+								/>
+							</td>
+							<td><img src="./assets/icons8-x-30.svg" alt="delete icon" 
+								class="x"/></td>
+						</tr>				
+						-->
+					</tbody>
+				</table>
+			</div>
+
+			<!-- Container modal -->
+			<div class="container-modal hidden">
+				<div id="modal" class="flex-col-center">
+					<p id="warning"></p>
+					<button id="button-modal">Ok</button>
+				</div>
+			</div>
+			
+		</main>
+		<footer class="flex-col-center">
+			<small>Copyright © 2023 | Lets</small>
+		</footer>
+		<script type="module" src="./index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+https://pinnate-citipati-a2d.notion.site/npm-pg-queries-a72f40f1fb5a42398b104f8cee763a4a
+
+https://pinnate-citipati-a2d.notion.site/Aula-05-Jun-es-e-agrega-es-b55f9daabedf4d06ac0ab6a57821ab93
+
+
+
+AULA 04
+notion.so/npm-pg-queries-a72f40f1fb5a42398b104f8cee763a4a
+
+
+pool.end(()=>{
+	console.log("pool has ended");
+})
+""
+INSERT INTO categories (
+id,
+name
+) VALUES (
+gen_random_uuid(),
+'Camisa'
+);
+
+SELECT * FROM categories;
+
+
+
+gucci:
+"a52f26ef-d313-4c19-8c02-857f5ecc9b2d"
+prada:
+"97df59bf-4d9d-4ec2-bace-6e474e75a218"
+
+saia:
+"280d1ef2-2c55-4f4e-a61e-7fd82eff1bb8"
+vestido:
+"d6b1984d-066b-4263-890b-294584dd4090"
+casaco:
+"c451d080-493e-4796-b7f9-770d0b40e3f5"
+
+UPDATE products SET name = 'Vest Royal supremo' WHERE id ='f0215ed3-7c67-48c0-bf89-5af90e31e5ac'
+
+
+
+testes:
+
+ const sql = `
+        INSERT INTO products (id, name, category_id, brand_id, price, quant_available, created_at)
+        VALUES (gen_random_uuid(), ${productName},);
+    `
+    const resp = conn.query(sql,[]);
+
+Praticando com funções, adicionei:
+Resposta da query realizada: { productId: 'effcb0fc-80cc-452f-a020-6fac67c309c4' }
+Conexão liberada para ser reaproveitada
+
+
+
+
