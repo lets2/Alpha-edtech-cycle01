@@ -1,0 +1,25 @@
+{
+    "name": "q3_project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "npx tsc && node ./dist",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "develop": "webpack-dev-server --mode development",
+        "build": "webpack --mode production"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^18.15.3",
+        "ts-loader": "^9.4.2",
+        "ts-node-dev": "^2.0.0",
+        "tsconfig-paths": "^4.1.2",
+        "typescript": "^5.0.2",
+        "webpack": "^5.76.3",
+        "webpack-cli": "^5.0.1",
+        "webpack-dev-server": "^4.13.1"
+    }
+}

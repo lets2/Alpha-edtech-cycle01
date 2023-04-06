@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "lib": ["ES6", "DOM"],
+        "experimentalDecorators": true,
+        "rootDir": "./src",
+        "moduleResolution": "node",
+        "allowJs": true,
+        "outDir": "./dist",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "skipLibCheck": true
+    }
+}

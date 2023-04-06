@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./index.css" />
+        <title>typeScript | Aula04</title>
+    </head>
+    <body>
+        <h1>TypeScript - Aula 04</h1>
+        <form action="" class="flex-col">
+            <div class="flex-col">
+                <label for="email">Insira seu email:</label>
+                <email-input id="email"></email-input>
+            </div>
+            <div class="flex-col">
+                <label for="password">Insira sua senha:</label>
+                <password-input id="password"></password-input>
+            </div>
+            <div class="flex-col">
+                <label for="name">Insira seu nome:</label>
+                <name-input id="name"></name-input>
+            </div>
+            <input type="button" id="register-button" value="Cadastrar" />
+            <input type="button" id="login-button" value="Entrar" />
+            <input type="button" id="update-button" value="Atualizar" />
+            <input type="button" id="email-validator-button" value="Validar" />
+        </form>
+        <script type="module" src="./dist/index.js"></script>
+    </body>
+</html>

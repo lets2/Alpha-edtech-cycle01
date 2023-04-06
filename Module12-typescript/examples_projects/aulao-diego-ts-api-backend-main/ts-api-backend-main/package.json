@@ -1,0 +1,29 @@
+{
+    "name": "ts-api-backend",
+    "version": "1.0.0",
+    "description": "Repositório com exemplo de aplicação back end em TypeScript para turma Hopper da Alpha.",
+    "main": "./build/server.js",
+    "scripts": {
+        "build": "tsc",
+        "prestart": "npm run build",
+        "start": "node .",
+        "predev": "clear ",
+        "dev": "tsnd --respawn ./src/server.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "pg": "^8.10.0",
+        "uuid": "^9.0.0"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.17",
+        "@types/pg": "^8.6.6",
+        "@types/uuid": "^9.0.1",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.0.2"
+    }
+}

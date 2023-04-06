@@ -1,0 +1,75 @@
+* {
+  font-family: 'Roboto mono', monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+#root {
+  width: 100vw;
+  max-width: 99vw;
+  min-height: 100vh;
+  overflow: auto;
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  overflow: auto;
+  background: 'transparent' center no-repeat;
+  background-size: cover;
+  user-select: none;
+}
+
+html,
+body {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  background: url('../assets/images/background.png') center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+h1 {
+  padding-bottom: 2vh;
+  letter-spacing: .4vw;
+}
+
+span {
+  text-align: center;
+}
+
+::placeholder {
+  padding-left: .5vw;
+  font-size: smaller;
+  opacity: .6;
+  letter-spacing: -1.6px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+  padding-top: 10px;
+}
+
+/* Cor do fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Cor do preenchimento da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  width: 5px;
+  background-color: #aaa;
+}
+
+/* Cor do preenchimento da barra de rolagem quando estiver passando o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

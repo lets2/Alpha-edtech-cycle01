@@ -1,0 +1,4 @@
+# ignore node_modules
+node_modules
+# .env contains restrict content
+.env

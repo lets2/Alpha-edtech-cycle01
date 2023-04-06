@@ -1,0 +1,54 @@
+---
+version: '3.8'
+name: chat_rpg
+
+services:
+  redis:
+    container_name: redis-rpg
+    image: redis:latest
+    ports:
+      - 6379:6379
+    restart: always
+    volumes:
+      - redis-data:/data
+    networks:
+      - rpg-network
+  mongodb:
+    container_name: mongo-rpg
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    volumes:
+      - ./server/src/config/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - mongo-data:/data/db
+    networks:
+      - rpg-network
+    env_file:
+      - ./server/.env
+  api:
+    container_name: api-rpg
+    build:
+      context: .
+      dockerfile: ./server/Dockerfile
+    restart: always
+    env_file:
+      - ./server/.env
+    depends_on:
+      - redis
+      - mongodb
+    ports:
+      - 5000:5000
+      - 5001:5001
+    networks:
+      - rpg-network
+
+volumes:
+  mongo-data:
+    external: false
+  redis-data:
+    external: false
+networks:
+  rpg-network:
+    driver: bridge
+    external: false
+...

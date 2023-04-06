@@ -1,0 +1,27 @@
+form{
+    display:flex;
+    flex-direction: column;
+    width:400px;
+    gap: 20px;
+    border: 1px solid #ac5cfc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #d7dafd;
+}
+form input[type="email"],form input[type="password"]{
+    padding: 5px;
+    border: 1px solid #ac5cfc;
+    border-radius: 5px;
+}
+#initial-button,#login-button{
+    border: none;
+    border-radius: 5px;
+    background-color: #ac5cfc;
+    color: white;
+    padding: 5px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#initial-button:hover,#login-button:hover{
+    background-color: #b983f0;
+}

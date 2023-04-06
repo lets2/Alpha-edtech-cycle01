@@ -1,0 +1,2 @@
+(()=>{"use strict";function e(e){e.preventDefault();const t=document.querySelector("input[name='firstnumber']"),n=document.querySelector("input[name='secondnumber']"),u=(r=Number(t.value),o=Number(n.value),r-o);var r,o;const c=document.querySelector("p");c&&(c.textContent=u.toString())}!function(){const t=document.querySelector("form");null==t||t.addEventListener("submit",e)}()})();
+//# sourceMappingURL=bundle.js.map

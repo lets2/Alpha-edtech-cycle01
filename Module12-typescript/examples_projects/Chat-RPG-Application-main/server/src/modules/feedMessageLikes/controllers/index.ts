@@ -1,0 +1,1 @@
+export { reactToFeed } from './reactToFeed';
