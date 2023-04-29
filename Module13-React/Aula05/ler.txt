@@ -1,0 +1,6 @@
+Q2_aula05 -> contem a lista e produtos que funciona corretamente
+useEffect(callback,[])
+Q3_aula05 e Q4_aula05 dão loops infinitos.
+
+Q7_aula05-> eh a questão que tem formulario e modal, que faz login
+e redireciona para uma página simples se estiver tudo okay.
