@@ -1,0 +1,17 @@
+TN:
+SF:src/sum.ts
+FN:1,sum
+FN:5,sum3numbers
+FNF:2
+FNH:1
+FNDA:3,sum
+FNDA:0,sum3numbers
+DA:1,1
+DA:2,3
+DA:5,1
+DA:10,0
+LF:4
+LH:3
+BRF:0
+BRH:0
+end_of_record

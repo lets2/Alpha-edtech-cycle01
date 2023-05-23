@@ -1,0 +1,8 @@
+em vez de criar tarefas
+tire prints do docker inspect para ver que montou lá
+git hub actions - gancho do github,ele da vm para voce rodar coisas
+mongodb - não relacional database
+websocket - protocolo de rede diferente, estabelece canal de comunicação
+redis - banco guardado na memoria ram do computador
+fazer cache com o redis (pub,sub), publicacao, inscricao
+

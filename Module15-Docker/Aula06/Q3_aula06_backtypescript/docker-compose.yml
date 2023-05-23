@@ -1,0 +1,44 @@
+version: "3.8"
+services:
+    db:
+        image: postgres
+        container_name: db
+        restart: always
+        volumes:
+            - vol-pg-data:/var/lib/postgresql/data
+        environment:
+            POSTGRES_PASSWORD: 1234
+            POSTGRES_USER: letsadmin
+            POSTGRES_DB: db-aula06
+        ports:
+            - 5454:5432
+        networks:
+            - typescriptApp
+
+    backend-web:
+        build: .
+        container_name: backend-web
+        restart: always
+        depends_on:
+            - db
+        volumes:
+            - vol-pg-data:/var/lib/postgresql/data
+        environment:
+            - PORT=80
+            - HOST=0.0.0.0
+            - DBUSER=letsadmin
+            - DBPASSWORD=1234
+            - DBHOST=db
+            - DBPORT=5432
+            - DBNAME=db-aula06
+        ports:
+            - 80:80
+        networks:
+            - typescriptApp
+
+volumes:
+    vol-pg-data:
+
+networks:
+    typescriptApp:
+        driver: bridge
